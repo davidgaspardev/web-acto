@@ -31,3 +31,50 @@ body {
     text-wrap: balance;
   }
 }
+
+/**
+  * Bree font
+  * https://fonts.google.com/specimen/Bree+Serif
+  */
+
+@font-face {
+  font-family: "Bree";
+  src: url("/fonts/Bree-Bold.ttf");
+  font-weight: bold; /* Typically 700 */
+}
+
+@font-face {
+  font-family: "Bree";
+  src: url("/fonts/Bree-Book.ttf");
+  font-weight: normal; /* Typically 400, but can vary */
+}
+
+@font-face {
+  font-family: "Bree";
+  src: url("/fonts/Bree-Extrabold.ttf");
+  font-weight: 800; /* Extra bold */
+}
+
+@font-face {
+  font-family: "Bree";
+  src: url("/fonts/Bree-Light.ttf");
+  font-weight: 300; /* Light */
+}
+
+@font-face {
+  font-family: "Bree";
+  src: url("/fonts/Bree-Regular.ttf");
+  font-weight: normal; /* Typically 400 */
+}
+
+@font-face {
+  font-family: "Bree";
+  src: url("/fonts/Bree-Semibold.ttf");
+  font-weight: 600; /* Semi-bold */
+}
+
+@font-face {
+  font-family: "Bree";
+  src: url("/fonts/Bree-Thin.ttf");
+  font-weight: 100; /* Thin */
+}
