@@ -1,0 +1,21 @@
+# Root Directory
+root = true
+
+# Default Settings
+[*]
+charset = utf-8                      # Set default charset as UTF-8
+end_of_line = lf                     # Linefeed as line ending 
+indent_size = 2                      # Indent size of 2 spaces
+indent_style = space                 # Indentation style is space
+insert_final_newline = true          # Insert a newline at the end of the file
+max_line_length = 85                 # Maximum line length is 85 characters
+trim_trailing_whitespace = true      # Trim trailing whitespaces
+
+# Markdown Files (.md)
+[*.md]
+max_line_length = off                # No line length limit
+trim_trailing_whitespace = false     # Do not trim trailing whitespaces
+
+# Commit Messages
+[COMMIT_EDITMSG]
+max_line_length = off                # No line length limit
