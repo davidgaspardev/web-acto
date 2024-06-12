@@ -2,7 +2,7 @@ import { BrancheInfo } from "@/helpers/types";
 
 export const branches: BrancheInfo[] = [
   {
-    // name: "Acto Academia Várzea",
+    id: 1,
     name: "Várzea",
     address: "Av. Afonso Olindense, nº 1090",
     neighborhood: "Varzea",
@@ -68,6 +68,7 @@ export const branches: BrancheInfo[] = [
     ],
   },
   {
+    id: 2,
     name: "Massangana",
     address: "Av. Zequinha Barreto, nº 150",
     neighborhood: "Massangana",
@@ -133,6 +134,7 @@ export const branches: BrancheInfo[] = [
     ],
   },
   {
+    id: 5,
     name: "Cordeiro",
     address: "R. Cláudio Brotherhood, nº 96",
     neighborhood: "Cordeiro",
@@ -198,6 +200,7 @@ export const branches: BrancheInfo[] = [
     ],
   },
   {
+    id: 3,
     name: "Iputinga",
     address: "R. São Mateus, nº 653",
     neighborhood: "Iputinga",
@@ -263,6 +266,7 @@ export const branches: BrancheInfo[] = [
     ],
   },
   {
+    id: 4,
     name: "Engenho do Meio",
     address: "R. Manoel Estevão da Costa, nº 119",
     neighborhood: "Iputinga",
