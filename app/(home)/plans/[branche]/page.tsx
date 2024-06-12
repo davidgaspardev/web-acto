@@ -3,7 +3,7 @@ import Plans from "@/app/(home)/components/Plans";
 import EvoApiClient from "@/app/api/services/evo";
 import { BrancheInfo } from "@/helpers/types";
 
-export async function getPlans(branche: BrancheInfo) {
+async function getPlans(branche: BrancheInfo) {
   const evoApiClient = EvoApiClient.getInstance();
   return await evoApiClient.getPlansByBranchId(branche.id);
 }
