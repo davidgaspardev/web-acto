@@ -11,29 +11,29 @@ export function Footer() {
       <h1>Acto Academia</h1>
       <h1 className="-mt-2">CREF 001670-PJ/PE</h1>
       <div className="flex flex-row gap-4 my-2">
-        <Link href={""}>
+        <Link href={"https://www.facebook.com/actoacademia"} target="_blank">
           <Image
             src={IconShareFacebook}
             alt="Facebook share"
-            width={32}/>
+            width={32} />
         </Link>
-        <Link href={""}>
+        <Link href={"https://www.instagram.com/actoacademia"} target="_blank">
           <Image
             src={IconShareInstagram}
             alt="Instagram share"
-            width={32}/>
+            width={32} />
         </Link>
-        <Link href={""}>
+        <Link href={"https://www.linkedin.com/company/actoacademia"} target="_blank">
           <Image
             src={IconShareLinkedIn}
             alt="LinkedIn share"
-            width={32}/>
+            width={32} />
         </Link>
-        <Link href={""}>
+        <Link href={"https://www.youtube.com/@ActoAcademia"} target="_blank">
           <Image
             src={IconShareYouTube}
             alt="YouTube share"
-            width={32}/>
+            width={32} />
         </Link>
       </div>
       <h1>Pernambuco, Brasil - 2024</h1>
