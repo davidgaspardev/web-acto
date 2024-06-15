@@ -1,5 +1,10 @@
 import { loadBasicAuthHeaderValue } from "@/helpers/auth";
-import { EVO_API_BASE_URL, EVO_API_PASSWORD, EVO_API_USERNAME } from "@/helpers/env";
+import {
+  EVO_API_BASE_URL,
+  EVO_API_PASSWORD,
+  EVO_API_USERNAME,
+  USE_MOCK,
+} from "@/helpers/env";
 import { Membership, PlanEvoData } from "@/helpers/types";
 
 export default class EvoApiClient {
@@ -15,6 +20,8 @@ export default class EvoApiClient {
   public getPlansByBranchId = async (
     branchId: number
   ): Promise<Array<PlanEvoData>> => {
+    if (USE_MOCK) return [];
+
     const url = `${EVO_API_BASE_URL}/v1/membership?idBranch=${branchId}&active=true`;
     const response = await fetch(url, {
       method: "GET",

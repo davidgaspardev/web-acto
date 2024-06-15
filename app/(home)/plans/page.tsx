@@ -26,6 +26,7 @@ function BrancheCard(props: BrancheCardProps) {
     <div className="w-[350px] h-96 rounded-b-[40px] rounded-tl-[40px] bg-[#FEF7FF] flex flex-col p-4 relative">
       <div className="flex-1">
         <Image
+        unoptimized
           src={imageUrl}
           alt="Branche"
           width={256}
