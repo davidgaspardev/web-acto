@@ -101,10 +101,7 @@ export default function Carousel() {
             viewBox="0 0 6 10"
           >
             <path
-              strokeLinejoin="currentColor"
-              strokeLinejoinLinecap="round"
-              strokeLinejoinLinejoin="round"
-              strokeLinejoinWidth="2"
+              strokeLinejoin="round"
               d="M5 1 1 5l4 4"
             />
           </svg>
@@ -125,10 +122,7 @@ export default function Carousel() {
             viewBox="0 0 6 10"
           >
             <path
-              strokeLinejoin="currentColor"
-              strokeLinejoinLinecap="round"
-              strokeLinejoinLinejoin="round"
-              strokeLinejoinWidth="2"
+              strokeLinejoin="round"
               d="m1 9 4-4-4-4"
             />
           </svg>
