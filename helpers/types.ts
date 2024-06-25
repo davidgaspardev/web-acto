@@ -8,20 +8,21 @@ export type BrancheInfo = {
   neighborhood: string;
   slug: string;
   imageUrl: string;
-  plans: BranchePlan[];
+  plans?: BranchePlan[];
 };
 
-export type PlanType =
-  | "INFINITY START – FIDELIDADE"
-  | "INFINITY START"
-  | "INFINITY MAX"
-  | "ENGENHO DO MEIO CONTRATO DE ADESÃO – FIDELIDADE";
-
 export type BranchePlan = {
-  name: PlanType;
+  name: string;
   link: string;
   value: number;
+  promotional?: BranchePlanPromotional;
   benefits: string[];
+};
+
+export type BranchePlanPromotional = {
+  value: number;
+  period: number;
+  periodUnit: "month" | "day";
 };
 
 // ======= EVO MEMBERSHIP TYPES =======
@@ -82,11 +83,4 @@ export type Membership = {
   displayName: string | null;
   entries: Entries;
   salesPage: SalesPage[];
-};
-
-export type PlanEvoData = {
-  name: string;
-  value: number;
-  benefits: string[];
-  link: string;
 };
