@@ -44,3 +44,6 @@ export default async function Page(props: PageProps) {
     </div>
   );
 }
+
+export const dynamic = 'force-static';
+export const revalidate = 60;
