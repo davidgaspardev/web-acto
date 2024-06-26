@@ -1,3 +1,5 @@
+export type Nullable<T> = T | null;
+
 export type BrancheInfo = {
   id: number;
   name: string;
@@ -16,6 +18,7 @@ export type BranchePlan = {
   link: string;
   value: number;
   promotional?: BranchePlanPromotional;
+  additionalService?: BrancheAdditionalService;
   benefits: string[];
 };
 
@@ -23,6 +26,11 @@ export type BranchePlanPromotional = {
   value: number;
   period: number;
   periodUnit: "month" | "day";
+};
+
+export type BrancheAdditionalService = {
+  name: string;
+  value: number;
 };
 
 // ======= EVO MEMBERSHIP TYPES =======
@@ -43,7 +51,7 @@ type AdditionalService = {
   idService: number;
   name: string;
   value: number;
-} | null;
+};
 
 type Entries = {
   entriesQuantity: number;
@@ -71,7 +79,7 @@ export type Membership = {
   onlineSalesObservations: OnlineSalesObservations;
   differentials: Differential[];
   accessBranches: Branch[];
-  additionalService: AdditionalService;
+  additionalService: Nullable<AdditionalService>;
   serviceYearly: any | null;
   typePromotionalPeriod: number;
   valuePromotionalPeriod: number;

@@ -51,6 +51,7 @@ export default class EvoApiClient {
             valuePromotionalPeriod,
             monthsPromotionalPeriod,
             daysPromotionalPeriod,
+            additionalService,
           }) => {
             let promotional: BranchePlanPromotional | undefined;
 
@@ -82,6 +83,11 @@ export default class EvoApiClient {
             };
 
             if (promotional) result.promotional = promotional;
+            if (additionalService)
+              result.additionalService = {
+                name: additionalService.name.replaceAll("*", "").trim(),
+                value: additionalService.value,
+              };
 
             return result;
           }

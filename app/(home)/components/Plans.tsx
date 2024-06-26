@@ -1,14 +1,10 @@
-import { BrancheInfo, BranchePlanPromotional } from "@/helpers/types";
-import Image, { StaticImageData } from "next/image";
+import { BrancheAdditionalService, BrancheInfo, BranchePlanPromotional } from "@/helpers/types";
+import Image from "next/image";
 import { useCallback } from "react";
-import PlanInfinityMax from "@/assets/svg/plan-infinity-max.svg";
-import PlanInfinityStart from "@/assets/svg/plan-infinity-start.svg";
-import PlanInfinityStartFidelidade from "@/assets/svg/plan-infinity-start-fidelidade.svg";
 import PlanBackgroundGreen from "@/assets/svg/plan-background-green.svg";
 import PlanBackgroundPurple from "@/assets/svg/plan-background-purple.svg";
 import PlanBackgroundYellow from "@/assets/svg/plan-background-yellow.svg";
 import PlanBackgroundPink from "@/assets/svg/plan-background-pink.svg";
-import PlanInfinityStartFidelidadeHorarioReduzido from "@/assets/svg/plan-infinity-start-fidelidade-horario-reduzido.svg";
 import Link from "next/link";
 import { buildWhatsappLink } from "@/helpers/tools";
 
@@ -26,7 +22,7 @@ export default function Plans(props: PlansProps) {
         <h1 className="-mt-2 font-bold">{brancheName.toUpperCase()}</h1>
       </div>
       <div className="flex flex-row-reverse flex-wrap gap-8 justify-center">
-        {plans?.map(({ name, value, link, benefits, promotional }, index) => {
+        {plans?.map(({ name, value, link, benefits, promotional, additionalService }, index) => {
           return (
             <div key={index}>
               <div className="bg-[#FEF7FF] rounded-b-[55px] rounded-tl-[55px] font-Bree text-[#553581] relative">
@@ -58,9 +54,11 @@ export default function Plans(props: PlansProps) {
                 ))}
               </div>
 
-              <div className="p-3 text-center bg-[#FEF7FF] rounded-t-[40px] rounded-br-[40px] text-sm relative font-Bree my-4">
-                <h3 className="text-[#553581] pb-2">Recorrência mensal</h3>
-                {/* <h3 className="text-[#553581]">Adesão R$50,00</h3> */}
+              <div className="p-2 text-center bg-[#FEF7FF] rounded-t-[40px] rounded-br-[40px] text-sm relative font-Bree my-4">
+                <div className="pb-2">
+                  <h3 className="text-[#553581] opacity-80">Recorrência mensal</h3>
+                  {additionalService && (<h3 className="text-[#553581]">{additionalService.name} R${additionalService.value.toFixed(2).replace(".", ",")}</h3>)}
+                </div>
 
                 <Link
                   href={buildWhatsappLink(
