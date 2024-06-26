@@ -22,7 +22,7 @@ export default function Plans(props: PlansProps) {
         <h1 className="-mt-2 font-bold">{brancheName.toUpperCase()}</h1>
       </div>
       <div className="flex flex-row-reverse flex-wrap gap-8 justify-center">
-        {plans?.map(({ name, value, link, benefits, promotional, additionalService }, index) => {
+        {plans?.sort((a, b) => a.value - b.value).map(({ name, value, link, benefits, promotional, additionalService }, index) => {
           return (
             <div key={index}>
               <div className="bg-[#FEF7FF] rounded-b-[55px] rounded-tl-[55px] font-Bree text-[#553581] relative">
