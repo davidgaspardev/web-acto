@@ -1,3 +1,5 @@
+export type Nullable<T> = T | null;
+
 export type BrancheInfo = {
   id: number;
   name: string;
@@ -8,20 +10,27 @@ export type BrancheInfo = {
   neighborhood: string;
   slug: string;
   imageUrl: string;
-  plans: BranchePlan[];
+  plans?: BranchePlan[];
 };
 
-export type PlanType =
-  | "INFINITY START – FIDELIDADE"
-  | "INFINITY START"
-  | "INFINITY MAX"
-  | "ENGENHO DO MEIO CONTRATO DE ADESÃO – FIDELIDADE";
-
 export type BranchePlan = {
-  name: PlanType;
+  name: string;
   link: string;
   value: number;
+  promotional?: BranchePlanPromotional;
+  additionalService?: BrancheAdditionalService;
   benefits: string[];
+};
+
+export type BranchePlanPromotional = {
+  value: number;
+  period: number;
+  periodUnit: "month" | "day";
+};
+
+export type BrancheAdditionalService = {
+  name: string;
+  value: number;
 };
 
 // ======= EVO MEMBERSHIP TYPES =======
@@ -42,7 +51,7 @@ type AdditionalService = {
   idService: number;
   name: string;
   value: number;
-} | null;
+};
 
 type Entries = {
   entriesQuantity: number;
@@ -70,7 +79,7 @@ export type Membership = {
   onlineSalesObservations: OnlineSalesObservations;
   differentials: Differential[];
   accessBranches: Branch[];
-  additionalService: AdditionalService;
+  additionalService: Nullable<AdditionalService>;
   serviceYearly: any | null;
   typePromotionalPeriod: number;
   valuePromotionalPeriod: number;
@@ -82,11 +91,4 @@ export type Membership = {
   displayName: string | null;
   entries: Entries;
   salesPage: SalesPage[];
-};
-
-export type PlanEvoData = {
-  name: string;
-  value: number;
-  benefits: string[];
-  link: string;
 };

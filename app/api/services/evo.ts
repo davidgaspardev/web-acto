@@ -5,7 +5,7 @@ import {
   EVO_API_USERNAME,
   USE_MOCK,
 } from "@/helpers/env";
-import { Membership, PlanEvoData } from "@/helpers/types";
+import { Membership, BranchePlan, BranchePlanPromotional } from "@/helpers/types";
 
 export default class EvoApiClient {
   private static instance: EvoApiClient;
@@ -19,7 +19,7 @@ export default class EvoApiClient {
 
   public getPlansByBranchId = async (
     branchId: number
-  ): Promise<Array<PlanEvoData>> => {
+  ): Promise<Array<BranchePlan>> => {
     if (USE_MOCK) return [];
 
     const url = `${EVO_API_BASE_URL}/v1/membership?idBranch=${branchId}&active=true`;
@@ -28,29 +28,69 @@ export default class EvoApiClient {
       headers: {
         Authorization: loadBasicAuthHeaderValue(EVO_API_USERNAME, EVO_API_PASSWORD),
         "Content-Type": "application/json",
+        "Cache-Control": "no-cache",
+        pragma: "no-cache",
         Accept: "application/json",
       },
     });
 
     if (response.status === 200) {
       const membershipList: Array<Membership> = await response.json();
+      console.log("Membership list:", membershipList);
       return membershipList
         .filter(
           (membership) =>
-            membership.displayName?.startsWith("INFINITY") &&
-            membership.displayName?.length <= 30 &&
-            membership.urlSale &&
-            membership.differentials.length > 0
+            membership.nameMembership.startsWith("SITE:") && membership.urlSale
         )
-        .map<PlanEvoData>(
-          ({ displayName: name, value, differentials, urlSale: link }) => ({
-            name: name!,
+        .map<BranchePlan>(
+          ({
+            displayName: name,
             value,
-            benefits: differentials
-              .sort((a, b) => a.order - b.order)
-              .map((d) => d.title),
-            link: link!,
-          })
+            differentials,
+            urlSale: link,
+            valuePromotionalPeriod,
+            monthsPromotionalPeriod,
+            daysPromotionalPeriod,
+            additionalService,
+          }) => {
+            let promotional: BranchePlanPromotional | undefined;
+
+            if (valuePromotionalPeriod) {
+              if (monthsPromotionalPeriod || daysPromotionalPeriod) {
+                promotional = {
+                  value: valuePromotionalPeriod,
+                  period: monthsPromotionalPeriod
+                    ? monthsPromotionalPeriod
+                    : daysPromotionalPeriod,
+                  periodUnit: monthsPromotionalPeriod ? "month" : "day",
+                };
+              } else {
+                console.error(
+                  "Invalid promotional period (months | days):",
+                  monthsPromotionalPeriod,
+                  daysPromotionalPeriod
+                );
+              }
+            }
+
+            const result: BranchePlan = {
+              name: name!,
+              value,
+              benefits: differentials
+                .sort((a, b) => a.order - b.order)
+                .map((d) => d.title),
+              link: link!,
+            };
+
+            if (promotional) result.promotional = promotional;
+            if (additionalService)
+              result.additionalService = {
+                name: additionalService.name.replaceAll("*", "").trim(),
+                value: additionalService.value,
+              };
+
+            return result;
+          }
         );
     } else {
       const error = await response.json();

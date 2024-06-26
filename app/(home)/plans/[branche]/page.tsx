@@ -11,15 +11,15 @@ async function getPlans(branche: BrancheInfo) {
 type PageProps = {
   params: {
     branche: string;
-  }
-}
+  };
+};
 
 export default async function Page(props: PageProps) {
   const { branche: slug } = props.params;
 
-  const branche = branches.find(branche => branche.slug === slug);
+  const branche = branches.find((branche) => branche.slug === slug);
 
-  if(!branche) {
+  if (!branche) {
     return (
       <div>
         <h1>Unidade não existente</h1>
@@ -27,16 +27,16 @@ export default async function Page(props: PageProps) {
     );
   }
 
-  const plansSync = await getPlans(branche);
-  for (const plan of plansSync) {
-    for (const planOld of branche.plans) {
-      if (plan.name === planOld.name) {
-        planOld.benefits = plan.benefits;
-        planOld.value = plan.value;
-        planOld.link = plan.link;
-      }
-    }
+  branche.plans = await getPlans(branche);
+  if (!branche.plans.length) {
+    return (
+      <div>
+        <h1>Planos não encontrados</h1>
+      </div>
+    );
   }
+
+  console.log(branche.plans);
 
   return (
     <div>
