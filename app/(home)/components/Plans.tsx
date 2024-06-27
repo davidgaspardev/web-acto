@@ -64,7 +64,7 @@ export default function Plans(props: PlansProps) {
                   href={buildWhatsappLink(
                     `Olá, gostaria de saber mais sobre o plano ${name} da unidade ${brancheName}.`,
                   )}
-                  className="bg-[#553682] text-white flex items-center justify-center absolute -bottom-4 py-1 w-[100px] left-[calc(50%-50px)] rounded-b-[15px] rounded-tr-[15px]"
+                  className="bg-[#553682] text-white flex items-center justify-center absolute -bottom-4 py-1 w-[150px] left-[calc(50%-75px)] rounded-b-[15px] rounded-tr-[15px]"
                 >
                   Fale com nosso time
                 </Link>
