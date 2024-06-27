@@ -1,4 +1,5 @@
 import { OurUnitys } from "./components/OurUnitys";
+import { HealthMap } from "./components/HealthMap";
 
 export default function HomePage() {
   return (
@@ -6,6 +7,7 @@ export default function HomePage() {
       <h1>Home Page</h1>
 
       <OurUnitys />
+      <HealthMap />
     </div>
   );
 }
