@@ -16,7 +16,7 @@ export const HealthMap = () => {
                 />
 
                 <div className={styles.textContainer}>
-                    <p className={styles.title}> Mapeamento de saúde</p>
+                    <p className={styles.title}>Mapeamento de saúde</p>
                     <p className={styles.subtitle}>Muito além de treinos para emagrecimento e massa muscular. O Acton é capaz de mapear sua saúde levando em coonsideração não somente sua saúde física como também sua saúde mental, emocional e social.</p>
                     <Link href={"https://www.youtube.com"} className={styles.link}>Saiba mais</Link>
                 </div>
