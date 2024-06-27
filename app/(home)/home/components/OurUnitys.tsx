@@ -16,7 +16,7 @@ export const OurUnitys = () => {
                 />
 
                 <div className={styles.textContainer}>
-                    <p className={styles.title}> Conheça nossas unidades</p>
+                    <p className={styles.title}>Conheça nossas unidades</p>
                     <p className={styles.subtitle}>Encontre a unidade ideal para você mudar a sua vida</p>
                     <Link href={"https://www.youtube.com"} className={styles.link}>Saiba mais</Link>
                 </div>
