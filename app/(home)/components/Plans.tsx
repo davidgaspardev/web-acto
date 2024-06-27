@@ -66,7 +66,7 @@ export default function Plans(props: PlansProps) {
                   )}
                   className="bg-[#553682] text-white flex items-center justify-center absolute -bottom-4 py-1 w-[100px] left-[calc(50%-50px)] rounded-b-[15px] rounded-tr-[15px]"
                 >
-                  Saber mais
+                  Fale com nosso time
                 </Link>
               </div>
             </div>
