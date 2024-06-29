@@ -102,7 +102,6 @@ export type ModelOne = {
   subtitle: string;
   buttonText: string;
   buttonLink: string;
-  forceMobile: boolean
 };
 
 export type ModelTwo = {

@@ -1,7 +1,8 @@
 import Carousel from "./components/Carousel";
-import { CardModelOne } from "./components/CardModelOne";
+import CardOne from "./components/CardModelOne";
 import { CardModelTwo } from "./components/CardModelTwo";
 import { CardModelThree } from "./components/CardModelThree";
+import { cardModelOneData } from "@/helpers/data";
 
 export default function HomePage() {
   return (
@@ -18,10 +19,13 @@ export default function HomePage() {
         'https://www.duq.edu/images/academics/colleges-and-schools/natural-and-environmental-sciences/applied.jpg',
       ]} />
 
-      <CardModelOne forceMobile={false} />
+      <CardOne data={cardModelOneData[0]} />
       <CardModelTwo />
       <CardModelThree />
-      <CardModelOne forceMobile={true} />
+      <div className="flex flex-row justify-evenly">
+        <CardOne forceMobile={true} data={cardModelOneData[1]} />
+        <CardOne forceMobile={true} data={cardModelOneData[1]} />
+      </div>
     </div>
   );
 }
