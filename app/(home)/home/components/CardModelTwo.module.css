@@ -62,3 +62,15 @@
     position: absolute;
     bottom: -42px;
 }
+
+@media screen and (max-width: 767px) {
+    .subContainer {
+        width: 90%;
+    }
+
+    .imageContainer {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+}

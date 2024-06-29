@@ -72,7 +72,7 @@
     margin-bottom: 20px;
 }
 
-.textContainer {
+.containerMobileForced .textContainer {
     min-height: 250px;
 }
 
@@ -83,4 +83,33 @@
 .containerMobileForced .subtitle {
     margin-bottom: 25px;
     width: 95%;
+}
+
+@media screen and (max-width: 767px) {
+    .subContainer {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .image {
+        margin-bottom: 20px;
+    }
+
+    .textContainer {
+        min-height: 250px;
+    }
+
+    .title {
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        margin-bottom: 25px;
+        width: 95%;
+    }
+
+    .containerMobileForced {
+        flex-direction: column;
+        gap: unset;
+    }
 }
