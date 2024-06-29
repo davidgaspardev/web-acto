@@ -1,8 +1,12 @@
 import Carousel from "./components/Carousel";
+import CardOne from "./components/CardModelOne";
+import { CardModelTwo } from "./components/CardModelTwo";
+import { CardModelThree } from "./components/CardModelThree";
+import { cardModelOneData } from "@/helpers/data";
 
 export default function HomePage() {
   return (
-    <div className="h-screen max-w-5xl m-auto">
+    <div className="max-w-7xl m-auto">
       <Carousel className="p-4" thumbnails={[
         'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg',
         'https://gratisography.com/wp-content/uploads/2024/01/gratisography-cyber-kitty-800x525.jpg',
@@ -14,6 +18,15 @@ export default function HomePage() {
         'https://blog-media.byjusfutureschool.com/bfs-blog/2022/07/12030656/Article-Page-7-1.jpg',
         'https://www.duq.edu/images/academics/colleges-and-schools/natural-and-environmental-sciences/applied.jpg',
       ]} />
+
+      <CardOne data={cardModelOneData[0]} />
+      <CardOne data={cardModelOneData[1]} />
+      <CardModelTwo />
+      <CardModelThree />
+      <div className="flex flex-row justify-evenly">
+        <CardOne forceMobile={true} data={cardModelOneData[2]} />
+        <CardOne forceMobile={true} data={cardModelOneData[3]} />
+      </div>
     </div>
   );
 }

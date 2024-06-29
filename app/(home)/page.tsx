@@ -1,4 +1,3 @@
-// import HomePage from "./home/page";
-import PlansPage from "./plans/page";
+import HomePage from "./home/page";
 
-export default PlansPage;
+export default HomePage;

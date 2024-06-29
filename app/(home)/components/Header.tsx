@@ -6,10 +6,10 @@ export default function Header() {
       <div className="flex-1 flex flex-row justify-center">
         {
           [
-            // {
-            //   name: "Home",
-            //   link: "/"
-            // },
+            {
+              name: "Home",
+              link: "/"
+            },
             {
               name: "Planos",
               link: "/plans"
