@@ -1,4 +1,4 @@
-import { BrancheInfo } from "@/helpers/types";
+import { BrancheInfo, ModelOne, ModelTwo, ModelThree } from "@/helpers/types";
 
 export const branches: BrancheInfo[] = [
   {
@@ -62,3 +62,86 @@ export const branches: BrancheInfo[] = [
       "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/branches%2Fbranche_engenho.jpg?alt=media&token=a1167580-8e95-4130-85de-22380cd53cfb",
   },
 ];
+
+export const cardModelOneData: ModelOne[] = [
+  {
+    id: "1",
+    imageUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
+    imageAlt: "Placeholder",
+    title: "Choneça nossas unidades",
+    subtitle: "Encontre a unidade ideal para você mudar a sua vida.",
+    buttonText: "Saiba mais",
+    buttonLink: "https://www.youtube.com"
+  },
+  {
+    id: "2",
+    imageUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
+    imageAlt: "Placeholder",
+    title: "Mapeamento de saúde",
+    subtitle: "Muito além de treinos para emagrecimento e massa muscular. O Acton é capaz de mapear sua saúde levando em coonsideração não somente sua saúde física como também sua saúde mental, emocional e social.",
+    buttonText: "Saiba mais",
+    buttonLink: "https://www.youtube.com"
+  }
+];
+
+export const cardModelTwoData: ModelTwo[] = [
+  {
+    id: "1",
+    imageOneUrl: "https://images.squarespace-cdn.com/content/v1/5a79de08aeb625f12ad4f85a/1527015265032-KYY1AQ4NCW6NB7BK1NDH/placeholder-image-vertical.png",
+    imageOneAlt: "Placeholder",
+    imageTwoUrl: "https://images.squarespace-cdn.com/content/v1/5a79de08aeb625f12ad4f85a/1527015265032-KYY1AQ4NCW6NB7BK1NDH/placeholder-image-vertical.png",
+    imageTwoAlt: "Placeholder",
+    imageThreeUrl: "https://images.squarespace-cdn.com/content/v1/5a79de08aeb625f12ad4f85a/1527015265032-KYY1AQ4NCW6NB7BK1NDH/placeholder-image-vertical.png",
+    imageThreeAlt: "Placeholder",
+    title: "Produtos exclusivos",
+    subtitle: "Construimos uma jornada de experiência para tornar sua relação com o exercício físico ainda mais fácil e prazerosa, por meio de métodos de treinamentos que vão muit além de apenas emagrecer ou ganhar massa múscular, eles levam em considerações suas necessidades físicas, mentais e emocionais, tudo isso baseado em muita evidência científica.",
+    buttonText: "Fazer meu mapeamento",
+    buttonLink: "https://www.youtube.com"
+  }
+];
+
+export const cardModelThreeData: ModelThree[] = [
+  {
+    id: "1",
+    imageUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
+    imageAlt: "Placeholder",
+    title: "Acto Vibes",
+    subtitle: "Possuímos uma metodologia exclusiva para você que gosta de aulas em grupos, nossas aulas de ginástica possuem o intuito de queimar muitas calorias e gerar satisfação e felicidade, são 8 modalidade de ginástica e aeróbica como Gap, Step, Core, Jump , Relax, Dança, Intense e treinamento Funcional. Tudo isso com mais de 40 aulas semanais em diversos horários e modalidades para que você consiga atingir seus objetivos.",
+    buttonText: "Ver horários",
+    buttonLink: "https://www.youtube.com",
+    stamps: [
+      {
+        stampUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
+        stampAlt: "Placeholder"
+      },
+      {
+        stampUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
+        stampAlt: "Placeholder"
+      },
+      {
+        stampUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
+        stampAlt: "Placeholder"
+      },
+      {
+        stampUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
+        stampAlt: "Placeholder"
+      },
+      {
+        stampUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
+        stampAlt: "Placeholder"
+      },
+      {
+        stampUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
+        stampAlt: "Placeholder"
+      },
+      {
+        stampUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
+        stampAlt: "Placeholder"
+      },
+      {
+        stampUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
+        stampAlt: "Placeholder"
+      }
+    ]
+  }
+]

@@ -7,10 +7,17 @@
 
 .subContainer {
     display: flex;
+    flex-direction: column;
     background-color: rgb(254 247 255 / var(--tw-bg-opacity));
     border-radius: 40px 0 40px 40px;
     padding: 16px;
     width: 725px;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
 .image {
@@ -30,6 +37,7 @@
     font-weight: 700;
     font-size: 24px;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .subtitle {
@@ -37,7 +45,8 @@
     font-size: 14px;
     font-weight: 400;
     text-align: center;
-    width: 70%;
+    width: 90%;
+    margin-bottom: 20px;
 }
 
 .link {
@@ -48,7 +57,7 @@
     font-weight: 700;
     background-color: #553581;
     border-radius: 0 24px 24px 24px;
-    width: 192px;
+    width: 300px;
     height: 48px;
     position: absolute;
     bottom: -42px;
