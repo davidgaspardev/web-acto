@@ -9,7 +9,7 @@ type cardModelTwoTypes = {
 }
 
 const CardTwo = (props: cardModelTwoTypes) => {
-    const { id, imageOneUrl, imageOneAlt, imageTwoUrl, imageTwoAlt, imageThreeUrl, imageThreeAlt, title, subtitle, buttonText, buttonLink } = props.data;
+    const { id, imageOneUrl, imageOneAlt, imageTwoUrl, imageTwoAlt, imageThreeUrl, imageThreeAlt, title, content, button} = props.data;
 
     return (
         <div id={id} className={styles.subContainer}>
@@ -42,8 +42,8 @@ const CardTwo = (props: cardModelTwoTypes) => {
 
             <div className={styles.textContainer}>
                 <p className={styles.title}>{title}</p>
-                <p className={styles.subtitle}>{subtitle}</p>
-                <Link href={buttonLink} className={styles.link}>{buttonText}</Link>
+                <p className={styles.subtitle}>{content}</p>
+                <Link href={button.link} className={styles.link}>{button.name}</Link>
             </div>
         </div>
     )

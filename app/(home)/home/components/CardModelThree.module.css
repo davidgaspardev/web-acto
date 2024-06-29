@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 70px;
+    padding: var(--padding-card-one);
 }
 
 .subContainer {
@@ -12,8 +13,8 @@
     position: relative;
     background-color: rgb(254 247 255 / var(--tw-bg-opacity));
     border-radius: 40px 0 40px 40px;
-    padding: 16px;
-    width: 725px;
+    padding: var(--padding-card-one);
+    width: 100%;
 }
 
 .imageAndTextsContainer {
@@ -63,7 +64,7 @@
 }
 
 .stamps {
-    width: 133px;
+    width: 22%;
 }
 
 .link {
@@ -79,6 +80,12 @@
     position: absolute;
     bottom: -25px;
     font-family: Bree;
+}
+
+@media screen and (max-width: 945px) {
+    .stamps {
+        width: 30%;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -100,5 +107,27 @@
 
     .stampsContainer {
         gap: 21px;
+    }
+
+    .stamps {
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .stamps {
+        width: 46%;
+    }
+}
+
+@media screen and (max-width: 441px) {
+    .stamps {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 377px) {
+    .stamps {
+        width: 40%;
     }
 }

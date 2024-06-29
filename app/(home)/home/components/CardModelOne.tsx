@@ -11,7 +11,7 @@ type CardOneProps = {
 }
 
 export default function CardOne(props: CardOneProps) {
-    const { id, imageUrl, imageAlt, title, subtitle, buttonLink, buttonText } = props.data;
+    const { id, imageUrl, imageAlt, title, content, button } = props.data;
     const { forceMobile } = props
 
     return (
@@ -31,23 +31,10 @@ export default function CardOne(props: CardOneProps) {
 
                 <div className={styles.cardOneContent}>
                     <p className={styles.title}>{title}</p>
-                    <p className={styles.subtitle}>{subtitle}</p>
-                    <Link href={buttonLink} className={styles.link}>{buttonText}</Link>
+                    <p className={styles.subtitle}>{content}</p>
+                    <Link href={button.link} className={styles.link}>{button.name}</Link>
                 </div>
             </div>
         </div>
     )
 }
-
-// export const CardModelOne: React.FC<IsMobile> = ({ forceMobile }) => {
-//     const filteredData = cardModelOneData.filter(item => item.forceMobile === forceMobile)
-//     return (forceMobile === false) ? (
-//         <div className={styles.container}>
-//             {filteredData.map((item, index) => <CardOne key={index} data={item} />)}
-//         </div>
-//     ) : (
-//         <div className={styles.containerMobileForced}>
-//             {filteredData.map((item, index) => <CardOne key={index} data={item} />)}
-//         </div>
-//     )
-// }

@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 70px;
+    padding: var(--padding-card-one);
 }
 
 .subContainer {
@@ -10,8 +11,8 @@
     flex-direction: column;
     background-color: rgb(254 247 255 / var(--tw-bg-opacity));
     border-radius: 40px 0 40px 40px;
-    padding: 16px;
-    width: 725px;
+    padding: var(--padding-card-one);
+    width: 100%;
 }
 
 .imageContainer {
@@ -22,6 +23,7 @@
 
 .image {
     border-radius: 40px 0 40px 40px;
+    width: 25%;
 }
 
 .textContainer {
@@ -75,5 +77,9 @@
         flex-direction: column;
         gap: 10px;
         align-items: center;
+    }
+
+    .image {
+        width: 50%;
     }
 }

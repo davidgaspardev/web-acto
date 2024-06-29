@@ -69,36 +69,44 @@ export const cardModelOneData: ModelOne[] = [
     imageUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
     imageAlt: "Placeholder",
     title: "Choneça nossas unidades",
-    subtitle: "Encontre a unidade ideal para você mudar a sua vida.",
-    buttonText: "Saiba mais",
-    buttonLink: "https://www.youtube.com",
+    content: "Encontre a unidade ideal para você mudar a sua vida.",
+    button: {
+      name: "Saiba mais",
+      link: "www.youtube.com.br"
+    }
   },
   {
     id: "2",
     imageUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
     imageAlt: "Placeholder",
     title: "Mapeamento de saúde",
-    subtitle: "Muito além de treinos para emagrecimento e massa muscular. O Acton é capaz de mapear sua saúde levando em coonsideração não somente sua saúde física como também sua saúde mental, emocional e social.",
-    buttonText: "Saiba mais",
-    buttonLink: "https://www.youtube.com",
+    content: "Muito além de treinos para emagrecimento e massa muscular. O Acton é capaz de mapear sua saúde levando em coonsideração não somente sua saúde física como também sua saúde mental, emocional e social.",
+    button: {
+      name: "Saiba mais",
+      link: "www.youtube.com.br"
+    }
   },
   {
     id: "3",
     imageUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
     imageAlt: "Placeholder",
     title: "Clube de vantagens",
-    subtitle: "Acumule pontos ao longo de sua jornada de bem-estar e troque por descontos e prêmios incriveis! Cada ação que você realiza na Acto é uma oportunidade de acumular pontos para trocar por prêmios e descontos de nossos parceiros selecionados.",
-    buttonText: "Saiba mais",
-    buttonLink: "https://www.youtube.com",
+    content: "Acumule pontos ao longo de sua jornada de bem-estar e troque por descontos e prêmios incriveis! Cada ação que você realiza na Acto é uma oportunidade de acumular pontos para trocar por prêmios e descontos de nossos parceiros selecionados.",
+    button: {
+      name: "Saiba mais",
+      link: "www.youtube.com.br"
+    }
   },
   {
     id: "4",
     imageUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
     imageAlt: "Placeholder",
     title: "Trabalhe conosco!",
-    subtitle: "Estamos com vagas em aberto e queremos contar com profissionais dedicados e apaixonados pelo universo da saúde e bem-estar! Ao fazer parte da nossa equipe você terá a oportunidade de crescer profissionalmente em um ambiente dinâmico e acolhedor.",
-    buttonText: "Saiba mais",
-    buttonLink: "https://www.youtube.com",
+    content: "Estamos com vagas em aberto e queremos contar com profissionais dedicados e apaixonados pelo universo da saúde e bem-estar! Ao fazer parte da nossa equipe você terá a oportunidade de crescer profissionalmente em um ambiente dinâmico e acolhedor.",
+    button: {
+      name: "Saiba mais",
+      link: "www.youtube.com.br"
+    }
   }
 ];
 
@@ -112,9 +120,11 @@ export const cardModelTwoData: ModelTwo[] = [
     imageThreeUrl: "https://images.squarespace-cdn.com/content/v1/5a79de08aeb625f12ad4f85a/1527015265032-KYY1AQ4NCW6NB7BK1NDH/placeholder-image-vertical.png",
     imageThreeAlt: "Placeholder",
     title: "Produtos exclusivos",
-    subtitle: "Construimos uma jornada de experiência para tornar sua relação com o exercício físico ainda mais fácil e prazerosa, por meio de métodos de treinamentos que vão muit além de apenas emagrecer ou ganhar massa múscular, eles levam em considerações suas necessidades físicas, mentais e emocionais, tudo isso baseado em muita evidência científica.",
-    buttonText: "Fazer meu mapeamento",
-    buttonLink: "https://www.youtube.com"
+    content: "Construimos uma jornada de experiência para tornar sua relação com o exercício físico ainda mais fácil e prazerosa, por meio de métodos de treinamentos que vão muit além de apenas emagrecer ou ganhar massa múscular, eles levam em considerações suas necessidades físicas, mentais e emocionais, tudo isso baseado em muita evidência científica.",
+    button: {
+      name: "Fazer meu mapeamento",
+      link: "www.youtube.com.br"
+    }
   }
 ];
 
@@ -124,9 +134,11 @@ export const cardModelThreeData: ModelThree[] = [
     imageUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
     imageAlt: "Placeholder",
     title: "Acto Vibes",
-    subtitle: "Possuímos uma metodologia exclusiva para você que gosta de aulas em grupos, nossas aulas de ginástica possuem o intuito de queimar muitas calorias e gerar satisfação e felicidade, são 8 modalidade de ginástica e aeróbica como Gap, Step, Core, Jump , Relax, Dança, Intense e treinamento Funcional. Tudo isso com mais de 40 aulas semanais em diversos horários e modalidades para que você consiga atingir seus objetivos.",
-    buttonText: "Ver horários",
-    buttonLink: "https://www.youtube.com",
+    content: "Possuímos uma metodologia exclusiva para você que gosta de aulas em grupos, nossas aulas de ginástica possuem o intuito de queimar muitas calorias e gerar satisfação e felicidade, são 8 modalidade de ginástica e aeróbica como Gap, Step, Core, Jump , Relax, Dança, Intense e treinamento Funcional. Tudo isso com mais de 40 aulas semanais em diversos horários e modalidades para que você consiga atingir seus objetivos.",
+    button: {
+      name: "Ver horários",
+      link: "www.youtube.com.br"
+    },
     stamps: [
       {
         stampUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",

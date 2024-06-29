@@ -9,7 +9,7 @@ type CardModelThreeTypes = {
 }
 
 const CardThree = (props: CardModelThreeTypes) => {
-    const { id, imageUrl, imageAlt, title, subtitle, buttonText, buttonLink, stamps } = props.data;
+    const { id, imageUrl, imageAlt, title, content, button, stamps } = props.data;
     return (
         <div id={id} className={styles.subContainer}>
             <div className={styles.imageAndTextsContainer}>
@@ -24,7 +24,7 @@ const CardThree = (props: CardModelThreeTypes) => {
 
                 <div className={styles.textContainer}>
                     <p className={styles.title}>{title}</p>
-                    <p className={styles.subtitle}>{subtitle}</p>
+                    <p className={styles.subtitle}>{content}</p>
                 </div>
             </div>
 
@@ -42,7 +42,7 @@ const CardThree = (props: CardModelThreeTypes) => {
                 ))}
             </div>
 
-            <Link href={buttonLink} className={styles.link}>{buttonText}</Link>
+            <Link href={button.link} className={styles.link}>{button.name}</Link>
         </div>
     )
 }

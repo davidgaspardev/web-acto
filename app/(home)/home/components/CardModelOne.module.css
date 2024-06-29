@@ -1,5 +1,6 @@
 .cardOneContainer {
     padding: var(--padding-card-one);
+    margin-bottom: 70px;
 }
 
 .cardOneContainer  > div {

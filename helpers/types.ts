@@ -99,9 +99,11 @@ export type ModelOne = {
   imageUrl: string;
   imageAlt: string;
   title: string;
-  subtitle: string;
-  buttonText: string;
-  buttonLink: string;
+  content: string;
+  button: {
+    name: string;
+    link: string;
+  }
 };
 
 export type ModelTwo = {
@@ -113,9 +115,11 @@ export type ModelTwo = {
   imageThreeUrl: string;
   imageThreeAlt: string;
   title: string;
-  subtitle: string;
-  buttonText: string;
-  buttonLink: string;
+  content: string;
+  button: {
+    name: string;
+    link: string;
+  }
 };
 
 export type ModelThree = {
@@ -123,9 +127,11 @@ export type ModelThree = {
   imageUrl: string;
   imageAlt: string;
   title: string;
-  subtitle: string;
-  buttonText: string;
-  buttonLink: string;
+  content: string;
+  button: {
+    name: string;
+    link: string;
+  }
   stamps: StampsType[];
 };
 
