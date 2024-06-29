@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useCallback, useRef, useState } from "react";
-import { twMerge } from "tailwind-merge";
 
 interface CarouselProps {
   className?: string;
@@ -16,33 +15,55 @@ export default function Carousel(props: CarouselProps) {
   const corouselRef = useRef<HTMLDivElement>(null);
   const corouselAnimationLock = useRef(false);
 
-  const next = useCallback(() => {
-    if (position === thumbnails.length - 1) return;
+  const next = useCallback((positionTarget?: number) => {
+    // if (position === thumbnails.length - 1) return;
     if (corouselAnimationLock.current) return;
     corouselAnimationLock.current = true;
+
+    const hasPositionTarget = positionTarget !== undefined;
 
     const corouselElement = corouselRef.current;
 
     if (corouselElement) {
       const width = getComputedStyle(corouselElement).width.replace('px', '');
-      corouselElement.scrollBy({ left: Number(width), behavior: 'smooth' });
-      setPosition(position + 1);
+
+      let offset = 1;
+
+      if (hasPositionTarget) {
+        offset = positionTarget - position;
+      }
+
+      console.log({ offset, position, positionTarget, width });
+
+      corouselElement.scrollBy({ left: Number(width) * offset, behavior: 'smooth' });
+      setPosition(hasPositionTarget ? positionTarget : position + 1);
     }
 
     setTimeout(() => corouselAnimationLock.current = false, 500);
-  }, [position, thumbnails]);
+  }, [position /*, thumbnails*/]);
 
-  const prev = useCallback(() => {
-    if (position === 0) return;
+  const prev = useCallback((positionTarget?: number) => {
+    // if (position === 0) return;
     if (corouselAnimationLock.current) return;
     corouselAnimationLock.current = true;
+
+    const hasPositionTarget = positionTarget !== undefined;
 
     const corouselElement = corouselRef.current;
 
     if (corouselElement) {
       const width = getComputedStyle(corouselElement).width.replace('px', '');
-      corouselElement.scrollBy({ left: -Number(width), behavior: 'smooth' });
-      setPosition(position - 1);
+
+      let offset = -1;
+
+      if (hasPositionTarget) {
+        offset = (position - positionTarget) * offset;
+      }
+
+      console.log({ offset, position, positionTarget, width });
+
+      corouselElement.scrollBy({ left: Number(width) * offset, behavior: 'smooth' });
+      setPosition(hasPositionTarget ? positionTarget : position - 1);
     }
 
     setTimeout(() => corouselAnimationLock.current = false, 500);
@@ -51,12 +72,18 @@ export default function Carousel(props: CarouselProps) {
   return (
     <div className={className}>
       <div className={"w-full aspect-[16/7] relative"}>
-        <SideButton direction="left" onClick={prev} />
-        <SideButton direction="right" onClick={next} />
-        <BottomIndicator index={position} amount={thumbnails.length} />
+        {/* <SideButton direction="left" onClick={prev} />
+        <SideButton direction="right" onClick={next} /> */}
+        <BottomIndicator index={position} amount={thumbnails.length} onClick={(i) => {
+          if (i > position) {
+            next(i);
+          } else if (i < position) {
+            prev(i);
+          }
+        }} />
         <div
           ref={corouselRef}
-          className="w-full h-full whitespace-nowrap overflow-hidden flex flex-row rounded-lg"
+          className="w-full h-full whitespace-nowrap overflow-hidden flex flex-row rounded-b-[64px] rounded-tl-[64px]"
         >
           {thumbnails.map((thumbnail, index) => <Image
             unoptimized
@@ -91,15 +118,19 @@ function SideButton(props: SideButtonProps) {
 interface BottomIndicatorProps {
   index: number;
   amount: number;
+  onClick: (currentIndex: number) => void;
 }
 
 function BottomIndicator(props: BottomIndicatorProps) {
-  const { index, amount } = props;
+  const { index, amount, onClick } = props;
 
   return (
-    <div className="flex flex-row absolute bottom-4 left-1/2 transform -translate-x-1/2">
+    <div className="flex flex-row absolute top-4 right-4 bg-[#FFF8FF] p-2 rounded-r-full rounded-bl-full">
       {Array.from({ length: amount }).map((_, i) => (
-        <div key={i} className={`w-2 h-2 rounded-full mx-1 ${index === i ? 'bg-gray-900' : 'bg-gray-300'}`} />
+        <div
+          key={i}
+          className={`w-4 h-4 rounded-full mx-1 ${index === i ? 'bg-[#553581]' : 'bg-[#FFDBFF] cursor-pointer'}`}
+          onClick={() => onClick(i)} />
       ))}
     </div>
   )
