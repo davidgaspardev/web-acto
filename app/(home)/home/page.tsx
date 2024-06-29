@@ -1,8 +1,11 @@
 import Carousel from "./components/Carousel";
+import { ExclusiveProducts } from "./components/ExclusiveProducts";
+import { HealthMap } from "./components/HealthMap";
+import { OurUnitys } from "./components/OurUnitys";
 
 export default function HomePage() {
   return (
-    <div className="h-screen max-w-7xl m-auto">
+    <div className="min-h-screen max-w-7xl m-auto">
       <Carousel className="p-4" thumbnails={[
         'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg',
         'https://gratisography.com/wp-content/uploads/2024/01/gratisography-cyber-kitty-800x525.jpg',
@@ -14,6 +17,9 @@ export default function HomePage() {
         'https://blog-media.byjusfutureschool.com/bfs-blog/2022/07/12030656/Article-Page-7-1.jpg',
         'https://www.duq.edu/images/academics/colleges-and-schools/natural-and-environmental-sciences/applied.jpg',
       ]} />
+      <OurUnitys />
+      <HealthMap />
+      <ExclusiveProducts />
     </div>
   );
 }
