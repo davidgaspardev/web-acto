@@ -40,6 +40,7 @@
     font-size: 24px;
     text-align: center;
     margin-bottom: 10px;
+    font-family: Bree;
 }
 
 .subtitle {
@@ -49,6 +50,7 @@
     text-align: center;
     width: 90%;
     margin-bottom: 20px;
+    font-family: Bree;
 }
 
 .stampsContainer {
@@ -76,6 +78,7 @@
     height: 48px;
     position: absolute;
     bottom: -25px;
+    font-family: Bree;
 }
 
 @media screen and (max-width: 767px) {

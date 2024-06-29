@@ -31,6 +31,7 @@
     font-weight: 700;
     font-size: 24px;
     text-align: center;
+    font-family: Bree;
 }
 
 .subtitle {
@@ -39,6 +40,7 @@
     font-weight: 400;
     text-align: center;
     width: 70%;
+    font-family: Bree;
 }
 
 .link {
@@ -53,6 +55,7 @@
     height: 48px;
     position: absolute;
     bottom: -42px;
+    font-family: Bree;
 }
 
 .containerMobileForced {
@@ -78,11 +81,13 @@
 
 .containerMobileForced .title {
     margin-bottom: 10px;
+    font-family: Bree;
 }
 
 .containerMobileForced .subtitle {
     margin-bottom: 25px;
     width: 95%;
+    font-family: Bree;
 }
 
 @media screen and (max-width: 767px) {
