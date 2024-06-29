@@ -7,21 +7,23 @@
 
 .subContainer {
     display: flex;
+    align-items: center;
     flex-direction: column;
+    position: relative;
     background-color: rgb(254 247 255 / var(--tw-bg-opacity));
     border-radius: 40px 0 40px 40px;
     padding: 16px;
     width: 725px;
 }
 
-.imageContainer {
+.imageAndTextsContainer {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .image {
     border-radius: 40px 0 40px 40px;
+    width: 45%;
 }
 
 .textContainer {
@@ -29,7 +31,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    width: 100%;
+    width: 55%;
 }
 
 .title {
@@ -47,6 +49,19 @@
     text-align: center;
     width: 90%;
     margin-bottom: 20px;
+}
+
+.stampsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 30px;
+    margin-bottom: 20px;
+    
+}
+
+.stamps {
+    width: 133px;
 }
 
 .link {

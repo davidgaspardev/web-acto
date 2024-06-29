@@ -3,13 +3,18 @@ import { cardModelOneData } from "@/helpers/data";
 import styles from "./CardModelOne.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 
 type CardModelOneTypes = {
     data: ModelOne
 }
 
+interface IsMobile {
+    forceMobile: boolean
+}
+
 const CardOne = (props: CardModelOneTypes) => {
-    const { id, imageUrl, imageAlt, title, subtitle, buttonLink, buttonText } = props.data;
+    const { id, imageUrl, imageAlt, title, subtitle, buttonLink, buttonText, forceMobile } = props.data;
 
     return (
         <div id={id} className={styles.subContainer}>
@@ -31,10 +36,15 @@ const CardOne = (props: CardModelOneTypes) => {
     )
 }
 
-export const CardModelOne = () => {
-    return (
+export const CardModelOne: React.FC<IsMobile> = ({ forceMobile }) => {
+    const filteredData = cardModelOneData.filter(item => item.forceMobile === forceMobile)
+    return (forceMobile === false) ? (
         <div className={styles.container}>
-            {cardModelOneData.map((item, index) => <CardOne key={index} data={item} />)}
+            {filteredData.map((item, index) => <CardOne key={index} data={item} />)}
+        </div>
+    ) : (
+        <div className={styles.containerMobileForced}>
+            {filteredData.map((item, index) => <CardOne key={index} data={item} />)}
         </div>
     )
 }

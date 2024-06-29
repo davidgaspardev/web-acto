@@ -54,3 +54,33 @@
     position: absolute;
     bottom: -42px;
 }
+
+.containerMobileForced {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.containerMobileForced .subContainer {
+    flex-direction: column;
+    width: 330px;
+    min-height: 500px;
+}
+
+.containerMobileForced .image {
+    margin-bottom: 20px;
+}
+
+.textContainer {
+    min-height: 250px;
+}
+
+.containerMobileForced .title {
+    margin-bottom: 10px;
+}
+
+.containerMobileForced .subtitle {
+    margin-bottom: 25px;
+    width: 95%;
+}

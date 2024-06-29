@@ -1,6 +1,6 @@
 import { ModelThree } from "@/helpers/types";
 import { cardModelThreeData } from "@/helpers/data";
-import styles from "./ExclusiveProducts.module.css";
+import styles from "./CardModelThree.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -28,7 +28,7 @@ const CardThree = (props: CardModelThreeTypes) => {
                 </div>
             </div>
 
-            <div>
+            <div className={styles.stampsContainer}>
                 {stamps.map((item, index) => (
                     <Image
                         key={index}
@@ -37,7 +37,7 @@ const CardThree = (props: CardModelThreeTypes) => {
                         alt={item.stampAlt}
                         width={50}
                         height={50}
-                        className={styles.image}
+                        className={styles.stamps}
                     />
                 ))}
             </div>

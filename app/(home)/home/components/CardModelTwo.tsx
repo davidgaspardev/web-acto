@@ -1,6 +1,6 @@
 import { ModelTwo } from "@/helpers/types";
 import { cardModelTwoData } from "@/helpers/data";
-import styles from "./ExclusiveProducts.module.css";
+import styles from "./CardModelTwo.module.css";
 import Image from "next/image";
 import Link from "next/link";
 

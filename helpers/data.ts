@@ -71,7 +71,8 @@ export const cardModelOneData: ModelOne[] = [
     title: "Choneça nossas unidades",
     subtitle: "Encontre a unidade ideal para você mudar a sua vida.",
     buttonText: "Saiba mais",
-    buttonLink: "https://www.youtube.com"
+    buttonLink: "https://www.youtube.com",
+    forceMobile: false
   },
   {
     id: "2",
@@ -80,7 +81,28 @@ export const cardModelOneData: ModelOne[] = [
     title: "Mapeamento de saúde",
     subtitle: "Muito além de treinos para emagrecimento e massa muscular. O Acton é capaz de mapear sua saúde levando em coonsideração não somente sua saúde física como também sua saúde mental, emocional e social.",
     buttonText: "Saiba mais",
-    buttonLink: "https://www.youtube.com"
+    buttonLink: "https://www.youtube.com",
+    forceMobile: false
+  },
+  {
+    id: "3",
+    imageUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
+    imageAlt: "Placeholder",
+    title: "Clube de vantagens",
+    subtitle: "Acumule pontos ao longo de sua jornada de bem-estar e troque por descontos e prêmios incriveis! Cada ação que você realiza na Acto é uma oportunidade de acumular pontos para trocar por prêmios e descontos de nossos parceiros selecionados.",
+    buttonText: "Saiba mais",
+    buttonLink: "https://www.youtube.com",
+    forceMobile: true
+  },
+  {
+    id: "4",
+    imageUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
+    imageAlt: "Placeholder",
+    title: "Trabalhe conosco!",
+    subtitle: "Estamos com vagas em aberto e queremos contar com profissionais dedicados e apaixonados pelo universo da saúde e bem-estar! Ao fazer parte da nossa equipe você terá a oportunidade de crescer profissionalmente em um ambiente dinâmico e acolhedor.",
+    buttonText: "Saiba mais",
+    buttonLink: "https://www.youtube.com",
+    forceMobile: true
   }
 ];
 

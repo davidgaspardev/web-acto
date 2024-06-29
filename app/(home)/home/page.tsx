@@ -18,9 +18,10 @@ export default function HomePage() {
         'https://www.duq.edu/images/academics/colleges-and-schools/natural-and-environmental-sciences/applied.jpg',
       ]} />
 
-      <CardModelOne />
+      <CardModelOne forceMobile={false} />
       <CardModelTwo />
       <CardModelThree />
+      <CardModelOne forceMobile={true} />
     </div>
   );
 }
