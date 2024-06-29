@@ -2,7 +2,7 @@ import Carousel from "./components/Carousel";
 
 export default function HomePage() {
   return (
-    <div className="h-screen max-w-7xl m-auto">
+    <div className="h-screen max-w-5xl m-auto">
       <Carousel className="p-4" thumbnails={[
         'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg',
         'https://gratisography.com/wp-content/uploads/2024/01/gratisography-cyber-kitty-800x525.jpg',
