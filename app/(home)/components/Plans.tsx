@@ -22,12 +22,12 @@ export default function Plans(props: PlansProps) {
         <h1 className="-mt-2 font-bold">{brancheName.toUpperCase()}</h1>
       </div>
       <div className="flex flex-row-reverse flex-wrap gap-8 justify-center">
-        {plans?.map(({ name, value, link, benefits, promotional, additionalService }, index) => {
+        {plans?.sort((a, b) => a.value - b.value).map(({ name, value, link, benefits, promotional, additionalService }, index) => {
           return (
             <div key={index}>
               <div className="bg-[#FEF7FF] rounded-b-[55px] rounded-tl-[55px] font-Bree text-[#553581] relative">
                 <HeaderPlan name={name} />
-                <ContentPlan value={value} promotional={promotional}/>
+                <ContentPlan value={value} promotional={promotional} />
                 <Link
                   href={link}
                   target="_blank"
@@ -64,9 +64,9 @@ export default function Plans(props: PlansProps) {
                   href={buildWhatsappLink(
                     `Olá, gostaria de saber mais sobre o plano ${name} da unidade ${brancheName}.`,
                   )}
-                  className="bg-[#553682] text-white flex items-center justify-center absolute -bottom-4 py-1 w-[100px] left-[calc(50%-50px)] rounded-b-[15px] rounded-tr-[15px]"
+                  className="bg-[#553682] text-white flex items-center justify-center absolute -bottom-4 py-1 w-[150px] left-[calc(50%-75px)] rounded-b-[15px] rounded-tr-[15px]"
                 >
-                  Saber mais
+                  Fale com nosso time
                 </Link>
               </div>
             </div>
@@ -127,22 +127,22 @@ function ContentPlan(props: ContentPlanProps) {
   return (
     <div className="pb-8">
       <div className={hasPromotional ? "opacity-50" : ""}>
-      <div className="flex flex-row justify-center items-start">
-        <h1 className="self-center">R$</h1>
-        {value
-          .toFixed(2)
-          .split(".")
-          .map((v, index) => (
-            <h1
-              key={index}
-              className={`${index === 0 ? "text-4xl" : "text-lg"} font-semibold ${hasPromotional ? "line-through" : ""}`}
-            >
-              {index === 0 ? "" : ","}
-              {v}
-            </h1>
-          ))}
-      </div>
-      <h1 className="text-center -mt-3">por mês</h1>
+        <div className="flex flex-row justify-center items-start">
+          <h1 className="self-center">R$</h1>
+          {value
+            .toFixed(2)
+            .split(".")
+            .map((v, index) => (
+              <h1
+                key={index}
+                className={`${index === 0 ? "text-4xl" : "text-lg"} font-semibold ${hasPromotional ? "line-through" : ""}`}
+              >
+                {index === 0 ? "" : ","}
+                {v}
+              </h1>
+            ))}
+        </div>
+        <h1 className="text-center -mt-3">por mês</h1>
       </div>
       {hasPromotional && (
         <div>
