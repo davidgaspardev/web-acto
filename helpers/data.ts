@@ -76,7 +76,7 @@ export const cardModelOneData: ModelOne[] = [
     id: "1",
     imageUrl: "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/images%2Fimg-acto.png?alt=media&token=1ed2ede1-5ac5-4460-8099-4dd2159c60ed",
     imageAlt: "Placeholder",
-    title: "Choneça nossas unidades",
+    title: "Conheça nossas unidades",
     content: "Encontre a unidade ideal para você mudar a sua vida.",
     button: {
       name: "Saiba mais",
