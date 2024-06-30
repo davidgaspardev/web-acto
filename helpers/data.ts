@@ -1,12 +1,12 @@
 import { BrancheInfo, ModelOne, ModelTwo, ModelThree } from "@/helpers/types";
-import VibesCore from "@/assets/svg/ic-vibes-core.svg";
-import VibesDance from "@/assets/svg/ic-vibes-dance.svg";
-import VibesFuncional from "@/assets/svg/ic-vibes-funcional.svg";
-import VibesGap from "@/assets/svg/ic-vibes-gap.svg";
-import VibesIntense from "@/assets/svg/ic-vibes-intense.svg";
-import VibesJump from "@/assets/svg/ic-vibes-jump.svg";
-import VibesRelax from "@/assets/svg/ic-vibes-relax.svg";
-import VibesSteps from "@/assets/svg/ic-vibes-steps.svg";
+import IconVibesCore from "@/assets/svg/ic-vibes-core.svg";
+import IconVibesDance from "@/assets/svg/ic-vibes-dance.svg";
+import IconVibesFuncional from "@/assets/svg/ic-vibes-funcional.svg";
+import IconVibesGap from "@/assets/svg/ic-vibes-gap.svg";
+import IconVibesIntense from "@/assets/svg/ic-vibes-intense.svg";
+import IconVibesJump from "@/assets/svg/ic-vibes-jump.svg";
+import IconVibesRelax from "@/assets/svg/ic-vibes-relax.svg";
+import IconVibesSteps from "@/assets/svg/ic-vibes-steps.svg";
 
 export const branches: BrancheInfo[] = [
   {
@@ -149,35 +149,35 @@ export const cardModelThreeData: ModelThree[] = [
     },
     stamps: [
       {
-        stampUrl: VibesCore,
+        stampUrl: IconVibesCore,
         stampAlt: "Placeholder"
       },
       {
-        stampUrl: VibesDance,
+        stampUrl: IconVibesDance,
         stampAlt: "Placeholder"
       },
       {
-        stampUrl: VibesFuncional,
+        stampUrl: IconVibesFuncional,
         stampAlt: "Placeholder"
       },
       {
-        stampUrl: VibesGap,
+        stampUrl: IconVibesGap,
         stampAlt: "Placeholder"
       },
       {
-        stampUrl: VibesIntense,
+        stampUrl: IconVibesIntense,
         stampAlt: "Placeholder"
       },
       {
-        stampUrl: VibesJump,
+        stampUrl: IconVibesJump,
         stampAlt: "Placeholder"
       },
       {
-        stampUrl: VibesRelax,
+        stampUrl: IconVibesRelax,
         stampAlt: "Placeholder"
       },
       {
-        stampUrl: VibesSteps,
+        stampUrl: IconVibesSteps,
         stampAlt: "Placeholder"
       }
     ]
