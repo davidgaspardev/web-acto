@@ -1,12 +1,12 @@
 import { BrancheInfo, ModelOne, ModelTwo, ModelThree } from "@/helpers/types";
-import vibesCore from "@/assets/svg/ic-vibes-core.svg";
-import vibesDance from "@/assets/svg/ic-vibes-dance.svg";
-import vibesFuncional from "@/assets/svg/ic-vibes-funcional.svg";
-import vibesGap from "@/assets/svg/ic-vibes-gap.svg";
-import vibesIntense from "@/assets/svg/ic-vibes-intense.svg";
-import vibesJump from "@/assets/svg/ic-vibes-jump.svg";
-import vibesRelax from "@/assets/svg/ic-vibes-relax.svg";
-import vibesSteps from "@/assets/svg/ic-vibes-steps.svg";
+import VibesCore from "@/assets/svg/ic-vibes-core.svg";
+import VibesDance from "@/assets/svg/ic-vibes-dance.svg";
+import VibesFuncional from "@/assets/svg/ic-vibes-funcional.svg";
+import VibesGap from "@/assets/svg/ic-vibes-gap.svg";
+import VibesIntense from "@/assets/svg/ic-vibes-intense.svg";
+import VibesJump from "@/assets/svg/ic-vibes-jump.svg";
+import VibesRelax from "@/assets/svg/ic-vibes-relax.svg";
+import VibesSteps from "@/assets/svg/ic-vibes-steps.svg";
 
 export const branches: BrancheInfo[] = [
   {
@@ -149,35 +149,35 @@ export const cardModelThreeData: ModelThree[] = [
     },
     stamps: [
       {
-        stampUrl: vibesCore,
+        stampUrl: VibesCore,
         stampAlt: "Placeholder"
       },
       {
-        stampUrl: vibesDance,
+        stampUrl: VibesDance,
         stampAlt: "Placeholder"
       },
       {
-        stampUrl: vibesFuncional,
+        stampUrl: VibesFuncional,
         stampAlt: "Placeholder"
       },
       {
-        stampUrl: vibesGap,
+        stampUrl: VibesGap,
         stampAlt: "Placeholder"
       },
       {
-        stampUrl: vibesIntense,
+        stampUrl: VibesIntense,
         stampAlt: "Placeholder"
       },
       {
-        stampUrl: vibesJump,
+        stampUrl: VibesJump,
         stampAlt: "Placeholder"
       },
       {
-        stampUrl: vibesRelax,
+        stampUrl: VibesRelax,
         stampAlt: "Placeholder"
       },
       {
-        stampUrl: vibesSteps,
+        stampUrl: VibesSteps,
         stampAlt: "Placeholder"
       }
     ]
