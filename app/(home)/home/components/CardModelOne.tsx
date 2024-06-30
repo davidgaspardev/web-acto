@@ -26,6 +26,7 @@ export default function CardOne(props: CardOneProps) {
                         alt={imageAlt}
                         width={0}
                         height={0}
+                        className="object-cover"
                     />
                 </div>
 

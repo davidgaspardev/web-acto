@@ -24,6 +24,7 @@
 .image {
     border-radius: 40px 0 40px 40px;
     width: 25%;
+    object-fit: cover;
 }
 
 .textContainer {
