@@ -1,4 +1,12 @@
 import { BrancheInfo, ModelOne, ModelTwo, ModelThree } from "@/helpers/types";
+import vibesCore from "@/assets/svg/ic-vibes-core.svg";
+import vibesDance from "@/assets/svg/ic-vibes-dance.svg";
+import vibesFuncional from "@/assets/svg/ic-vibes-funcional.svg";
+import vibesGap from "@/assets/svg/ic-vibes-gap.svg";
+import vibesIntense from "@/assets/svg/ic-vibes-intense.svg";
+import vibesJump from "@/assets/svg/ic-vibes-jump.svg";
+import vibesRelax from "@/assets/svg/ic-vibes-relax.svg";
+import vibesSteps from "@/assets/svg/ic-vibes-steps.svg";
 
 export const branches: BrancheInfo[] = [
   {
@@ -66,7 +74,7 @@ export const branches: BrancheInfo[] = [
 export const cardModelOneData: ModelOne[] = [
   {
     id: "1",
-    imageUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/images%2Fimg-acto.png?alt=media&token=1ed2ede1-5ac5-4460-8099-4dd2159c60ed",
     imageAlt: "Placeholder",
     title: "Choneça nossas unidades",
     content: "Encontre a unidade ideal para você mudar a sua vida.",
@@ -77,7 +85,7 @@ export const cardModelOneData: ModelOne[] = [
   },
   {
     id: "2",
-    imageUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/images%2Fimg-action.png?alt=media&token=b133e180-0612-4f57-a2c6-181b2d4b5188",
     imageAlt: "Placeholder",
     title: "Mapeamento de saúde",
     content: "Muito além de treinos para emagrecimento e massa muscular. O Acton é capaz de mapear sua saúde levando em coonsideração não somente sua saúde física como também sua saúde mental, emocional e social.",
@@ -88,7 +96,7 @@ export const cardModelOneData: ModelOne[] = [
   },
   {
     id: "3",
-    imageUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/images%2Fimg-garrafas-acto.png?alt=media&token=4f383e65-14d8-416a-9cb6-25e378878a35",
     imageAlt: "Placeholder",
     title: "Clube de vantagens",
     content: "Acumule pontos ao longo de sua jornada de bem-estar e troque por descontos e prêmios incriveis! Cada ação que você realiza na Acto é uma oportunidade de acumular pontos para trocar por prêmios e descontos de nossos parceiros selecionados.",
@@ -113,11 +121,11 @@ export const cardModelOneData: ModelOne[] = [
 export const cardModelTwoData: ModelTwo[] = [
   {
     id: "1",
-    imageOneUrl: "https://images.squarespace-cdn.com/content/v1/5a79de08aeb625f12ad4f85a/1527015265032-KYY1AQ4NCW6NB7BK1NDH/placeholder-image-vertical.png",
+    imageOneUrl: "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/images%2Fimg-viver-bem.jpg?alt=media&token=4aaa7b34-0913-4fc6-b762-95807f3cefab",
     imageOneAlt: "Placeholder",
-    imageTwoUrl: "https://images.squarespace-cdn.com/content/v1/5a79de08aeb625f12ad4f85a/1527015265032-KYY1AQ4NCW6NB7BK1NDH/placeholder-image-vertical.png",
+    imageTwoUrl: "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/images%2Fimg-viva-leve.jpg?alt=media&token=01fff4ce-a7c1-492a-8d75-5136e9e55d0b",
     imageTwoAlt: "Placeholder",
-    imageThreeUrl: "https://images.squarespace-cdn.com/content/v1/5a79de08aeb625f12ad4f85a/1527015265032-KYY1AQ4NCW6NB7BK1NDH/placeholder-image-vertical.png",
+    imageThreeUrl: "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/images%2Fimg-vida-ativa.jpg?alt=media&token=b6e0b24b-5233-4cf0-af89-7940f7c22992",
     imageThreeAlt: "Placeholder",
     title: "Produtos exclusivos",
     content: "Construimos uma jornada de experiência para tornar sua relação com o exercício físico ainda mais fácil e prazerosa, por meio de métodos de treinamentos que vão muit além de apenas emagrecer ou ganhar massa múscular, eles levam em considerações suas necessidades físicas, mentais e emocionais, tudo isso baseado em muita evidência científica.",
@@ -141,35 +149,35 @@ export const cardModelThreeData: ModelThree[] = [
     },
     stamps: [
       {
-        stampUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
+        stampUrl: vibesCore,
         stampAlt: "Placeholder"
       },
       {
-        stampUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
+        stampUrl: vibesDance,
         stampAlt: "Placeholder"
       },
       {
-        stampUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
+        stampUrl: vibesFuncional,
         stampAlt: "Placeholder"
       },
       {
-        stampUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
+        stampUrl: vibesGap,
         stampAlt: "Placeholder"
       },
       {
-        stampUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
+        stampUrl: vibesIntense,
         stampAlt: "Placeholder"
       },
       {
-        stampUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
+        stampUrl: vibesJump,
         stampAlt: "Placeholder"
       },
       {
-        stampUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
+        stampUrl: vibesRelax,
         stampAlt: "Placeholder"
       },
       {
-        stampUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
+        stampUrl: vibesSteps,
         stampAlt: "Placeholder"
       }
     ]
