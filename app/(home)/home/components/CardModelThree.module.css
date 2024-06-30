@@ -25,6 +25,7 @@
 .image {
     border-radius: 40px 0 40px 40px;
     width: 45%;
+    object-fit: cover;
 }
 
 .textContainer {
@@ -60,7 +61,7 @@
     width: 90%;
     gap: 30px;
     margin-bottom: 30px;
-    
+
 }
 
 .stamps {
