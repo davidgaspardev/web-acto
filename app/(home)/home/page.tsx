@@ -17,7 +17,7 @@ export default function HomePage() {
       <CardOne data={cardModelOneData[1]} />
       <CardModelTwo />
       <CardModelThree />
-      <div className="flex flex-row justify-evenly">
+      <div className="flex flex-row justify-evenly flex-wrap">
         <CardOne forceMobile={true} data={cardModelOneData[2]} />
         <CardOne forceMobile={true} data={cardModelOneData[3]} />
       </div>
