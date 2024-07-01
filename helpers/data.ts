@@ -96,7 +96,7 @@ export const cardModelOneData: ModelOne[] = [
   },
   {
     id: "3",
-    imageUrl: "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/images%2Fimg-garrafas-acto.png?alt=media&token=4f383e65-14d8-416a-9cb6-25e378878a35",
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/images%2Fclube.png?alt=media&token=1b7734b7-3885-46a2-bdfa-22523697f81f",
     imageAlt: "Placeholder",
     title: "Clube de vantagens",
     content: "Acumule pontos ao longo de sua jornada de bem-estar e troque por descontos e prêmios incriveis! Cada ação que você realiza na Acto é uma oportunidade de acumular pontos para trocar por prêmios e descontos de nossos parceiros selecionados.",
@@ -107,7 +107,7 @@ export const cardModelOneData: ModelOne[] = [
   },
   {
     id: "4",
-    imageUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/images%2Fvagas.png?alt=media&token=319b53c4-1b7e-44b7-b931-c8a1ba0cb9be",
     imageAlt: "Placeholder",
     title: "Trabalhe conosco!",
     content: "Estamos com vagas em aberto e queremos contar com profissionais dedicados e apaixonados pelo universo da saúde e bem-estar! Ao fazer parte da nossa equipe você terá a oportunidade de crescer profissionalmente em um ambiente dinâmico e acolhedor.",
@@ -139,7 +139,7 @@ export const cardModelTwoData: ModelTwo[] = [
 export const cardModelThreeData: ModelThree[] = [
   {
     id: "1",
-    imageUrl: "https://www.oystr.com.br/wp-content/uploads/2022/08/placeholder.png",
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/images%2Fvibes.png?alt=media&token=7d902719-64ce-4726-8ccd-3a051d4da157",
     imageAlt: "Placeholder",
     title: "Acto Vibes",
     content: "Possuímos uma metodologia exclusiva para você que gosta de aulas em grupos, nossas aulas de ginástica possuem o intuito de queimar muitas calorias e gerar satisfação e felicidade, são 8 modalidade de ginástica e aeróbica como Gap, Step, Core, Jump , Relax, Dança, Intense e treinamento Funcional. Tudo isso com mais de 40 aulas semanais em diversos horários e modalidades para que você consiga atingir seus objetivos.",
