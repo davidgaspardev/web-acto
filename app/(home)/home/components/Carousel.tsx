@@ -83,7 +83,7 @@ export default function Carousel(props: CarouselProps) {
         }} />
         <div
           ref={corouselRef}
-          className="w-full h-full whitespace-nowrap overflow-hidden flex flex-row rounded-b-[64px] rounded-tl-[64px]"
+          className="w-full h-full whitespace-nowrap overflow-hidden flex flex-row rounded-b-[6%_13%] rounded-tl-[6%_13%]"
         >
           {thumbnails.map((thumbnail, index) => <Image
             unoptimized
