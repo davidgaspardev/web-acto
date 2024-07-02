@@ -92,3 +92,50 @@ export type Membership = {
   entries: Entries;
   salesPage: SalesPage[];
 };
+
+// ======= HOME PAGE TYPES =======
+export type ModelOne = {
+  id: string;
+  imageUrl: string;
+  imageAlt: string;
+  title: string;
+  content: string;
+  button: {
+    name: string;
+    link: string;
+  }
+};
+
+export type ModelTwo = {
+  id: string;
+  imageOneUrl: string;
+  imageOneAlt: string;
+  imageTwoUrl: string;
+  imageTwoAlt: string;
+  imageThreeUrl: string;
+  imageThreeAlt: string;
+  title: string;
+  content: string;
+  button: {
+    name: string;
+    link: string;
+  }
+};
+
+export type ModelThree = {
+  id: string;
+  imageUrl: string;
+  imageAlt: string;
+  title: string;
+  content: string;
+  button: {
+    name: string;
+    link: string;
+  }
+  stamps: StampsType[];
+};
+
+type StampsType = {
+  stampUrl: string;
+  stampAlt: string;
+}

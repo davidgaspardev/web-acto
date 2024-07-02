@@ -1,0 +1,134 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    padding: var(--padding-card-one);
+}
+
+.subContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-color: rgb(254 247 255 / var(--tw-bg-opacity));
+    border-radius: 40px 0 40px 40px;
+    padding: var(--padding-card-one);
+    width: 100%;
+}
+
+.imageAndTextsContainer {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.image {
+    border-radius: 40px 0 40px 40px;
+    width: 45%;
+    object-fit: cover;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 55%;
+}
+
+.title {
+    color: #553581;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: Bree;
+}
+
+.subtitle {
+    color: #553581;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    width: 90%;
+    margin-bottom: 20px;
+    font-family: Bree;
+}
+
+.stampsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 30px;
+    margin-bottom: 30px;
+
+}
+
+.stamps {
+    width: 22%;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #553581;
+    border-radius: 0 24px 24px 24px;
+    width: 300px;
+    height: 48px;
+    position: absolute;
+    bottom: -25px;
+    font-family: Bree;
+}
+
+@media screen and (max-width: 945px) {
+    .stamps {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .subContainer {
+        width: 90%;
+    }
+
+    .imageAndTextsContainer {
+        flex-direction: column;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .textContainer {
+        width: 100%;
+    }
+
+    .stampsContainer {
+        gap: 21px;
+    }
+
+    .stamps {
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .stamps {
+        width: 46%;
+    }
+}
+
+@media screen and (max-width: 441px) {
+    .stamps {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 377px) {
+    .stamps {
+        width: 40%;
+    }
+}
