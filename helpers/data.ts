@@ -80,7 +80,7 @@ export const cardModelOneData: ModelOne[] = [
     content: "Encontre a unidade ideal para você mudar a sua vida.",
     button: {
       name: "Saiba mais",
-      link: "www.youtube.com.br"
+      link: "/plans"
     }
   },
   {
@@ -91,7 +91,7 @@ export const cardModelOneData: ModelOne[] = [
     content: "Muito além de treinos para emagrecimento e massa muscular. O Acton é capaz de mapear sua saúde levando em coonsideração não somente sua saúde física como também sua saúde mental, emocional e social.",
     button: {
       name: "Saiba mais",
-      link: "www.youtube.com.br"
+      link: "https://web-acton.vercel.app"
     }
   },
   {
@@ -102,7 +102,7 @@ export const cardModelOneData: ModelOne[] = [
     content: "Acumule pontos ao longo de sua jornada de bem-estar e troque por descontos e prêmios incriveis! Cada ação que você realiza na Acto é uma oportunidade de acumular pontos para trocar por prêmios e descontos de nossos parceiros selecionados.",
     button: {
       name: "Saiba mais",
-      link: "www.youtube.com.br"
+      link: "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/club%2Facto_club.pdf?alt=media&token=0fef94d5-694f-4b51-8893-1f804435839c"
     }
   },
   {
@@ -113,7 +113,7 @@ export const cardModelOneData: ModelOne[] = [
     content: "Estamos com vagas em aberto e queremos contar com profissionais dedicados e apaixonados pelo universo da saúde e bem-estar! Ao fazer parte da nossa equipe você terá a oportunidade de crescer profissionalmente em um ambiente dinâmico e acolhedor.",
     button: {
       name: "Saiba mais",
-      link: "www.youtube.com.br"
+      link: "https://actoacademia.typeform.com/grupoacto-vagas"
     }
   }
 ];
@@ -131,7 +131,7 @@ export const cardModelTwoData: ModelTwo[] = [
     content: "Construimos uma jornada de experiência para tornar sua relação com o exercício físico ainda mais fácil e prazerosa, por meio de métodos de treinamentos que vão muit além de apenas emagrecer ou ganhar massa múscular, eles levam em considerações suas necessidades físicas, mentais e emocionais, tudo isso baseado em muita evidência científica.",
     button: {
       name: "Fazer meu mapeamento",
-      link: "www.youtube.com.br"
+      link: "https://linktr.ee/unidadesacto?fbclid=PAZXh0bgNhZW0CMTEAAaZuLXywZDV0RL_0FD5IL7xX55G5l4WuddNcq5tSXihHo_sFg5iaLevmdvY_aem_ZmFrZWR1bW15MTZieXRlcw"
     }
   }
 ];
@@ -145,7 +145,7 @@ export const cardModelThreeData: ModelThree[] = [
     content: "Possuímos uma metodologia exclusiva para você que gosta de aulas em grupos, nossas aulas de ginástica possuem o intuito de queimar muitas calorias e gerar satisfação e felicidade, são 8 modalidade de ginástica e aeróbica como Gap, Step, Core, Jump , Relax, Dança, Intense e treinamento Funcional. Tudo isso com mais de 40 aulas semanais em diversos horários e modalidades para que você consiga atingir seus objetivos.",
     button: {
       name: "Ver horários",
-      link: "www.youtube.com.br"
+      link: "https://linktr.ee/actoacademias?fbclid=PAZXh0bgNhZW0CMTEAAabJMy-DjiX7Mkx-RNXFZPeW2u3ajVB6DwWOiJLPEQs5nggLOxeVrdWJ39E_aem_ZmFrZWR1bW15MTZieXRlcw"
     },
     stamps: [
       {

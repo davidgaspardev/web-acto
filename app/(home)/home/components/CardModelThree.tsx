@@ -42,7 +42,7 @@ const CardThree = (props: CardModelThreeTypes) => {
                 ))}
             </div>
 
-            <Link href={button.link} className={styles.link}>{button.name}</Link>
+            <Link href={button.link} target="_blank" className={styles.link}>{button.name}</Link>
         </div>
     )
 }
