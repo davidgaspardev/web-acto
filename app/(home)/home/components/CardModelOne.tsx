@@ -33,7 +33,7 @@ export default function CardOne(props: CardOneProps) {
                 <div className={styles.cardOneContent}>
                     <p className={styles.title}>{title}</p>
                     <p className={styles.subtitle}>{content}</p>
-                    <Link href={button.link} className={styles.link}>{button.name}</Link>
+                    <Link href={button.link} target="_blank" className={styles.link}>{button.name}</Link>
                 </div>
             </div>
         </div>
