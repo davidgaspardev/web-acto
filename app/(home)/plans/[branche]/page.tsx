@@ -30,13 +30,14 @@ export default async function Page(props: PageProps) {
   branche.plans = await getPlans(branche);
   if (!branche.plans.length) {
     return (
-      <div>
-        <h1>Planos não encontrados</h1>
+      <div className="flex flex-col items-center justify-center font-Bree text-black h-auto">
+       <div>
+       <h1>Essa unidade ainda não possui planos!</h1>
+       <p>Por favor tente novamente mais tarde</p>
+       </div>
       </div>
     );
   }
-
-  console.log(branche.plans);
 
   return (
     <div>
