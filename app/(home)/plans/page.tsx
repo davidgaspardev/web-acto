@@ -31,6 +31,7 @@ function BrancheCard(props: BrancheCardProps) {
           alt="Branche"
           width={256}
           height={0}
+          
           className="rounded-b-[40px] rounded-tl-[40px] object-cover w-full h-full"/>
       </div>
       <div className="h-32 text-center font-Bree text-[#553581]">

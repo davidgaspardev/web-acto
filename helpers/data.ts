@@ -69,6 +69,18 @@ export const branches: BrancheInfo[] = [
     imageUrl:
       "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/branches%2Fbranche_engenho.jpg?alt=media&token=a1167580-8e95-4130-85de-22380cd53cfb",
   },
+  {
+    id: 5,
+    name: "Iputinga Prime",
+    address: "rua São Mateus, 643 - iputinga",
+    neighborhood: "Iputinga",
+    city: "Recife",
+    state: "PE",
+    zipCode: "50680-000",
+    slug: "Iputinga",
+    imageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/branches%2Fbranche_iputinga-prime.jpg?alt=media&token=e287b9e4-4bc5-4bd6-bbb7-69a951e78071",
+  },
 ];
 
 export const cardModelOneData: ModelOne[] = [
