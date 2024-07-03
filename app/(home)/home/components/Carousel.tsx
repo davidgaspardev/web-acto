@@ -71,7 +71,7 @@ export default function Carousel(props: CarouselProps) {
 
   return (
     <div className={className}>
-      <div className={"w-full aspect-[16/7] relative"}>
+      <div className={"w-full aspect-[27/16] relative"}>
         {/* <SideButton direction="left" onClick={prev} />
         <SideButton direction="right" onClick={next} /> */}
         <BottomIndicator index={position} amount={thumbnails.length} onClick={(i) => {
@@ -125,7 +125,7 @@ function BottomIndicator(props: BottomIndicatorProps) {
   const { index, amount, onClick } = props;
 
   return (
-    <div className="flex flex-row absolute top-4 right-4 bg-[#FFF8FF] p-2 rounded-r-full rounded-bl-full">
+    <div className="flex flex-row absolute md:top-4 md:right-4 md:bg-[#FFF8FF] p-2 rounded-r-full rounded-bl-full top-[84%] right-[36%] bg-[#fef7ffb3]">
       {Array.from({ length: amount }).map((_, i) => (
         <div
           key={i}
