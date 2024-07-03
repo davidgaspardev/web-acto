@@ -31,13 +31,15 @@ export default function BrancheLayout(props: BranchesLayoutProps) {
         <meta property="og:description" content={metadata.openGraph.description} />
         <meta property="og:image" content={metadata.openGraph.image} />
 
-        
+
       </head>
       <body>
-        <main className="pt-16 bg-white">
+        <main className="pt-16 bg-white min-h-[100vh] flex flex-col">
           <Header />
           <Banner />
-          {children}
+          <div className="flex-1">
+            {children}
+          </div>
           <Footer />
         </main>
       </body>
