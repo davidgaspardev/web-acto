@@ -77,7 +77,7 @@ export const branches: BrancheInfo[] = [
     city: "Recife",
     state: "PE",
     zipCode: "50680-000",
-    slug: "Iputinga",
+    slug: "iputinga-prime",
     imageUrl:
       "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/branches%2Fbranche_iputinga-prime.jpg?alt=media&token=e287b9e4-4bc5-4bd6-bbb7-69a951e78071",
   },
