@@ -2,6 +2,7 @@ import { branches } from "@/helpers/data";
 import Plans from "@/app/(home)/components/Plans";
 import EvoApiClient from "@/app/api/services/evo";
 import { BrancheInfo } from "@/helpers/types";
+import Link from "next/link";
 
 async function getPlans(branche: BrancheInfo) {
   const evoApiClient = EvoApiClient.getInstance();
@@ -28,13 +29,20 @@ export default async function Page(props: PageProps) {
   }
 
   branche.plans = await getPlans(branche);
-  if (!branche.plans.length) {
+  if (branche.plans.length) {
     return (
       <div className="flex flex-col items-center justify-center font-Bree text-black h-[calc(100vh-416px)]">
         <div>
           <h1 className="text-2xl text-[#3c2063]">Essa unidade ainda não possui planos...</h1>
           <p className="text-[#3c2063]">Por favor tente novamente mais tarde</p>
         </div>
+
+        <Link
+            href={`https://wa.me/message/4TNN74AZUSRTJ1`}
+            target="_blank"
+            className="h-12 w-60 font-Bree text-xl rounded-b-3xl rounded-tr-3xl bg-[#553682] text-white flex items-center justify-center absolute bottom-24 sm:bottom-30px md:bottom-44 left-[calc(50%-120px)]">
+            <strong>Entrar para o grupo VIP</strong>
+          </Link>
       </div>
     );
   }
