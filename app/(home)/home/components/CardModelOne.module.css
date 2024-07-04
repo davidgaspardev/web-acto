@@ -141,6 +141,10 @@
 }
 
 @media screen and (max-width: 767px) {
+    .cardOneContainer {
+        width: 100%;
+    }
+
     .subContainer {
         flex-direction: column;
         width: 90%;
