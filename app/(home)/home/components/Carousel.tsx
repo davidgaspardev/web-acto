@@ -125,7 +125,7 @@ function BottomIndicator(props: BottomIndicatorProps) {
   const { index, amount, onClick } = props;
 
   return (
-    <div className="flex flex-row absolute md:top-4 md:right-4 md:bg-[#FFF8FF] p-2 rounded-r-full rounded-bl-full top-[84%] right-[36%] bg-[#fef7ffb3]">
+    <div className="flex flex-row absolute md:top-4 md:right-4 md:bg-[#FFF8FF] p-2 rounded-r-full rounded-bl-full max-md:bottom-4 right-1/2 max-md:transform max-md:translate-x-1/2 bg-[#fef7ffb3]">
       {Array.from({ length: amount }).map((_, i) => (
         <div
           key={i}
