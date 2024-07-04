@@ -81,6 +81,7 @@
     position: absolute;
     bottom: -25px;
     font-family: Bree;
+    color: #ffffff;
 }
 
 @media screen and (max-width: 945px) {
