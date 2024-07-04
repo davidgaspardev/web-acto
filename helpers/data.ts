@@ -70,7 +70,7 @@ export const branches: BrancheInfo[] = [
       "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/branches%2Fbranche_engenho.jpg?alt=media&token=a1167580-8e95-4130-85de-22380cd53cfb",
   },
   {
-    id: 16,
+    id: 6,
     name: "Iputinga Prime",
     address: "rua São Mateus, 643 - iputinga",
     neighborhood: "Iputinga",
