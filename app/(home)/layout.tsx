@@ -31,7 +31,7 @@ export default function BrancheLayout(props: BranchesLayoutProps) {
         <meta property="og:description" content={metadata.openGraph.description} />
         <meta property="og:image" content={metadata.openGraph.image} />
 
-        
+
       </head>
       <body>
         <main className="pt-16 bg-white">
