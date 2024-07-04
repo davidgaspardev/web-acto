@@ -34,12 +34,10 @@ export default function BrancheLayout(props: BranchesLayoutProps) {
 
       </head>
       <body>
-        <main className="pt-16 bg-white min-h-[100vh] flex flex-col">
+        <main className="pt-16 bg-white">
           <Header />
           <Banner />
-          <div className="flex-1">
-            {children}
-          </div>
+          {children}
           <Footer />
         </main>
       </body>

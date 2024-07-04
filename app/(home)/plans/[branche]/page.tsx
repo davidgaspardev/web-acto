@@ -30,11 +30,11 @@ export default async function Page(props: PageProps) {
   branche.plans = await getPlans(branche);
   if (!branche.plans.length) {
     return (
-      <div className="flex flex-col items-center justify-center font-Bree text-black h-auto">
-       <div>
-       <h1>Essa unidade ainda não possui planos!</h1>
-       <p>Por favor tente novamente mais tarde</p>
-       </div>
+      <div className="flex flex-col items-center justify-center font-Bree text-black h-[calc(100vh-416px)]">
+        <div>
+          <h1 className="text-2xl text-[#3c2063]">Essa unidade ainda não possui planos...</h1>
+          <p className="text-[#3c2063]">Por favor tente novamente mais tarde</p>
+        </div>
       </div>
     );
   }
