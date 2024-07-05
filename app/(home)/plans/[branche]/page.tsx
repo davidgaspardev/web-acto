@@ -31,16 +31,16 @@ export default async function Page(props: PageProps) {
   branche.plans = await getPlans(branche);
   if (!branche.plans.length) {
     return (
-      <div className="flex flex-col items-center justify-center font-Bree text-black h-[calc(100vh-416px)]">
+      <div className="flex flex-col items-center justify-center font-Bree text-black h-[calc(100vh-416px)] md:px-8 px-4">
         <div>
-          <h1 className="text-2xl text-[#3c2063]">Essa unidade ainda não possui planos...</h1>
-          <p className="text-[#3c2063]">Por favor tente novamente mais tarde</p>
+          <h1 className="text-2xl text-[#3c2063] text-center">Estamos finalizando alguns ajustes da nova unidade, e logo mais vamos contar tuda a vocês.</h1>
+          <p className="text-[#3c2063] text-center">Em breve divulgaremos mais informações, lembrando que para participar da condição especial de inauguração é necessário permanecer no grupo e se cadastrar para receber o voucher.</p>
         </div>
 
         <Link
             href={`https://wa.me/message/4TNN74AZUSRTJ1`}
             target="_blank"
-            className="h-12 w-60 font-Bree text-xl rounded-b-3xl rounded-tr-3xl bg-[#553682] text-white flex items-center justify-center absolute bottom-24 sm:bottom-30px md:bottom-44 left-[calc(50%-120px)]">
+            className="h-12 w-60 font-Bree text-xl rounded-b-3xl rounded-tr-3xl bg-[#553682] text-white flex items-center justify-center mt-4">
             <strong>Entrar para o grupo VIP</strong>
           </Link>
       </div>
