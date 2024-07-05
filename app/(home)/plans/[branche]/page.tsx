@@ -29,7 +29,7 @@ export default async function Page(props: PageProps) {
   }
 
   branche.plans = await getPlans(branche);
-  if (branche.plans.length) {
+  if (!branche.plans.length) {
     return (
       <div className="flex flex-col items-center justify-center font-Bree text-black h-[calc(100vh-416px)]">
         <div>
