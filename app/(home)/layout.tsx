@@ -19,7 +19,7 @@ type BranchesLayoutProps = {
   children: React.ReactNode;
 }
 
-export default function BrancheLayout(props: BranchesLayoutProps) {
+export default function BranchLayout(props: BranchesLayoutProps) {
   const { children } = props;
 
   return (
