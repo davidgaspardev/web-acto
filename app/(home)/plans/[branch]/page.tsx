@@ -5,23 +5,23 @@ import { BranchInfo } from "@/helpers/types";
 import Link from "next/link";
 import { WPP_DIRECT_LINK } from "@/helpers/env";
 
-async function getPlans(branche: BranchInfo) {
+async function getPlans(branch: BranchInfo) {
   const evoApiClient = EvoApiClient.getInstance();
-  return await evoApiClient.getPlansByBranchId(branche.id);
+  return await evoApiClient.getPlansByBranchId(branch.id);
 }
 
 type PageProps = {
   params: {
-    branche: string;
+    branch: string;
   };
 };
 
 export default async function Page(props: PageProps) {
-  const { branche: slug } = props.params;
+  const { branch: slug } = props.params;
 
-  const branche = branches.find((branche) => branche.slug === slug);
+  const branch = branches.find((branch) => branch.slug === slug);
 
-  if (!branche) {
+  if (!branch) {
     return (
       <div>
         <h1>Unidade não existente</h1>
@@ -29,8 +29,8 @@ export default async function Page(props: PageProps) {
     );
   }
 
-  branche.plans = await getPlans(branche);
-  if (branche.plans.length) {
+  branch.plans = await getPlans(branch);
+  if (!branch.plans.length) {
     return (
       <div className="flex flex-col items-center justify-center font-Bree text-black h-[calc(100vh-416px)] md:px-8 px-4">
         <div>
@@ -50,7 +50,7 @@ export default async function Page(props: PageProps) {
 
   return (
     <div>
-      <Plans data={branche} />
+      <Plans data={branch} />
     </div>
   );
 }
