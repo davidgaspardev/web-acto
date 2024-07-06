@@ -5,5 +5,6 @@ export const EVO_API_PASSWORD = process.env.EVO_API_PASSWORD!;
 
 export const WPP_API_PHONE = process.env.WPP_API_PHONE!; // || MissingEnv("WPP_API_PHONE");
 export const WPP_API_FBCLID = process.env.WPP_API_FBCLID!; // || MissingEnv("EVO_API_PASSWORD");
+export const WPP_DIRECT_LINK = process.env.WPP_DIRECT_LINK!;
 
 export const USE_MOCK = process.env.USE_MOCK === "true";

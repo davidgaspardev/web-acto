@@ -3,6 +3,7 @@ import Plans from "@/app/(home)/components/Plans";
 import EvoApiClient from "@/app/api/services/evo";
 import { BrancheInfo } from "@/helpers/types";
 import Link from "next/link";
+import { WPP_DIRECT_LINK } from "@/helpers/env";
 
 async function getPlans(branche: BrancheInfo) {
   const evoApiClient = EvoApiClient.getInstance();
@@ -29,7 +30,7 @@ export default async function Page(props: PageProps) {
   }
 
   branche.plans = await getPlans(branche);
-  if (!branche.plans.length) {
+  if (branche.plans.length) {
     return (
       <div className="flex flex-col items-center justify-center font-Bree text-black h-[calc(100vh-416px)] md:px-8 px-4">
         <div>
@@ -38,7 +39,7 @@ export default async function Page(props: PageProps) {
         </div>
 
         <Link
-            href={`https://wa.me/message/4TNN74AZUSRTJ1`}
+            href={WPP_DIRECT_LINK}
             target="_blank"
             className="h-12 w-60 font-Bree text-xl rounded-b-3xl rounded-tr-3xl bg-[#553682] text-white flex items-center justify-center mt-4">
             <strong>Entrar para o grupo VIP</strong>
