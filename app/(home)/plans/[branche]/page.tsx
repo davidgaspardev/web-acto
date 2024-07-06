@@ -1,11 +1,11 @@
 import { branches } from "@/helpers/data";
 import Plans from "@/app/(home)/components/Plans";
 import EvoApiClient from "@/app/api/services/evo";
-import { BrancheInfo } from "@/helpers/types";
+import { BranchInfo } from "@/helpers/types";
 import Link from "next/link";
 import { WPP_DIRECT_LINK } from "@/helpers/env";
 
-async function getPlans(branche: BrancheInfo) {
+async function getPlans(branche: BranchInfo) {
   const evoApiClient = EvoApiClient.getInstance();
   return await evoApiClient.getPlansByBranchId(branche.id);
 }
@@ -30,7 +30,7 @@ export default async function Page(props: PageProps) {
   }
 
   branche.plans = await getPlans(branche);
-  if (!branche.plans.length) {
+  if (branche.plans.length) {
     return (
       <div className="flex flex-col items-center justify-center font-Bree text-black h-[calc(100vh-416px)] md:px-8 px-4">
         <div>

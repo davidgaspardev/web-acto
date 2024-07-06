@@ -1,4 +1,4 @@
-import { BrancheAdditionalService, BrancheInfo, BranchePlanPromotional } from "@/helpers/types";
+import { BranchAdditionalService, BranchInfo, BranchPlanPromotional } from "@/helpers/types";
 import Image from "next/image";
 import { useCallback } from "react";
 import PlanBackgroundGreen from "@/assets/svg/plan-background-green.svg";
@@ -9,7 +9,7 @@ import Link from "next/link";
 import { buildWhatsappLink } from "@/helpers/tools";
 
 type PlansProps = {
-  data: BrancheInfo;
+  data: BranchInfo;
 };
 
 export default function Plans(props: PlansProps) {
@@ -116,7 +116,7 @@ function HeaderPlan(props: HeaderPlanProps) {
 
 interface ContentPlanProps {
   value: number;
-  promotional?: BranchePlanPromotional;
+  promotional?: BranchPlanPromotional;
 }
 
 function ContentPlan(props: ContentPlanProps) {

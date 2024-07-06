@@ -1,4 +1,4 @@
-import { BrancheInfo, ModelOne, ModelTwo, ModelThree } from "@/helpers/types";
+import { BranchInfo, ModelOne, ModelTwo, ModelThree } from "@/helpers/types";
 import IconVibesCore from "@/assets/svg/ic-vibes-core.svg";
 import IconVibesDance from "@/assets/svg/ic-vibes-dance.svg";
 import IconVibesFuncional from "@/assets/svg/ic-vibes-funcional.svg";
@@ -8,7 +8,7 @@ import IconVibesJump from "@/assets/svg/ic-vibes-jump.svg";
 import IconVibesRelax from "@/assets/svg/ic-vibes-relax.svg";
 import IconVibesSteps from "@/assets/svg/ic-vibes-steps.svg";
 
-export const branches: BrancheInfo[] = [
+export const branches: BranchInfo[] = [
   {
     id: 1,
     name: "Várzea",

@@ -1,5 +1,5 @@
 import { branches } from "@/helpers/data";
-import { BrancheInfo } from "@/helpers/types";
+import { BranchInfo } from "@/helpers/types";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,18 +8,18 @@ export default function BranchesPage() {
     <div className="flex flex-col items-center w-full my-12">
       <div className="flex flex-row justify-center gap-16 items-center min-h-[calc(100vh-64px)] flex-wrap max-w-[800px]">
         {
-          branches.map((branche, index) => <BrancheCard key={index} data={branche} />)
+          branches.map((branche, index) => <BranchCard key={index} data={branche} />)
         }
       </div>
     </div>
   );
 }
 
-type BrancheCardProps = {
-  data: BrancheInfo
+type BranchCardProps = {
+  data: BranchInfo
 }
 
-function BrancheCard(props: BrancheCardProps) {
+function BranchCard(props: BranchCardProps) {
   const { name, address, neighborhood, city, state, zipCode, slug, imageUrl } = props.data;
 
   return (
@@ -28,7 +28,7 @@ function BrancheCard(props: BrancheCardProps) {
         <Image
         unoptimized
           src={imageUrl}
-          alt="Branche"
+          alt="Branch"
           width={256}
           height={0}
           className="rounded-b-[40px] rounded-tl-[40px] object-cover w-full h-full"/>
