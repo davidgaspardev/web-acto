@@ -20,6 +20,7 @@ export const branches: BranchInfo[] = [
     slug: "varzea",
     imageUrl:
       "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/branches%2Fbranche_varzea.jpg?alt=media&token=0da6a261-dd21-46ac-a176-b3e3aeb2cb4d",
+    wppLink: "https://wa.me/message/TIBDVHOEFKP5B1",
   },
   {
     id: 2,
@@ -32,6 +33,7 @@ export const branches: BranchInfo[] = [
     slug: "massangana",
     imageUrl:
       "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/branches%2Fbranche_massangana.jpg?alt=media&token=5c0df52e-07d5-4f6d-9bdf-920a35f1c093",
+    wppLink: "https://wa.me/message/7DINMQ75XQRWI1",
   },
   {
     id: 5,
@@ -44,6 +46,7 @@ export const branches: BranchInfo[] = [
     slug: "cordeiro",
     imageUrl:
       "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/branches%2Fbranche_cordeiro.jpg?alt=media&token=0b1ffee0-3491-4017-a31b-7e0a64b56e9a",
+    wppLink: "https://wa.me/message/22BNUPGM2E7YH1",
   },
   {
     id: 3,
@@ -56,6 +59,7 @@ export const branches: BranchInfo[] = [
     slug: "iputinga",
     imageUrl:
       "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/branches%2Fbranche_iputinga.jpg?alt=media&token=2390fdbc-cd32-4db3-acc5-278a9c8a3133",
+    wppLink: "https://wa.me/message/7U77P27G5N2QO1",
   },
   {
     id: 4,
@@ -68,6 +72,7 @@ export const branches: BranchInfo[] = [
     slug: "engenho",
     imageUrl:
       "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/branches%2Fbranche_engenho.jpg?alt=media&token=a1167580-8e95-4130-85de-22380cd53cfb",
+    wppLink: "https://wa.me/message/K2KTKXGW5GIZK1",
   },
   {
     id: 6,
@@ -80,6 +85,7 @@ export const branches: BranchInfo[] = [
     slug: "iputinga-prime",
     imageUrl:
       "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/branches%2Fbranche_iputinga-prime.jpg?alt=media&token=e287b9e4-4bc5-4bd6-bbb7-69a951e78071",
+    wppLink: "https://wa.me/message/4TNN74AZUSRTJ1",
   },
 ];
 
