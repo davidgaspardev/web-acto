@@ -13,7 +13,7 @@ type PlansProps = {
 };
 
 export default function Plans(props: PlansProps) {
-  const { name: brancheName, plans } = props.data;
+  const { name: brancheName, plans, wppLink } = props.data;
 
   return (
     <div className="flex flex-col items-center w-full my-8">
@@ -61,7 +61,7 @@ export default function Plans(props: PlansProps) {
                 </div>
 
                 <Link
-                  href={buildWhatsappLink(
+                  href={wppLink || buildWhatsappLink(
                     `Olá, gostaria de saber mais sobre o plano ${name} da unidade ${brancheName}.`,
                   )}
                   className="bg-[#553682] text-white flex items-center justify-center absolute -bottom-4 py-1 w-[150px] left-[calc(50%-75px)] rounded-b-[15px] rounded-tr-[15px]"

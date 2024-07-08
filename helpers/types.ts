@@ -10,6 +10,7 @@ export type BranchInfo = {
   neighborhood: string;
   slug: string;
   imageUrl: string;
+  wppLink?: string;
   plans?: BranchPlan[];
 };
 
@@ -103,7 +104,7 @@ export type ModelOne = {
   button: {
     name: string;
     link: string;
-  }
+  };
 };
 
 export type ModelTwo = {
@@ -119,7 +120,7 @@ export type ModelTwo = {
   button: {
     name: string;
     link: string;
-  }
+  };
 };
 
 export type ModelThree = {
@@ -131,11 +132,11 @@ export type ModelThree = {
   button: {
     name: string;
     link: string;
-  }
+  };
   stamps: StampsType[];
 };
 
 type StampsType = {
   stampUrl: string;
   stampAlt: string;
-}
+};
