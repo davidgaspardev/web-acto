@@ -1,6 +1,6 @@
 export type Nullable<T> = T | null;
 
-export type BrancheInfo = {
+export type BranchInfo = {
   id: number;
   name: string;
   address: string;
@@ -10,25 +10,25 @@ export type BrancheInfo = {
   neighborhood: string;
   slug: string;
   imageUrl: string;
-  plans?: BranchePlan[];
+  plans?: BranchPlan[];
 };
 
-export type BranchePlan = {
+export type BranchPlan = {
   name: string;
   link: string;
   value: number;
-  promotional?: BranchePlanPromotional;
-  additionalService?: BrancheAdditionalService;
+  promotional?: BranchPlanPromotional;
+  additionalService?: BranchAdditionalService;
   benefits: string[];
 };
 
-export type BranchePlanPromotional = {
+export type BranchPlanPromotional = {
   value: number;
   period: number;
   periodUnit: "month" | "day";
 };
 
-export type BrancheAdditionalService = {
+export type BranchAdditionalService = {
   name: string;
   value: number;
 };

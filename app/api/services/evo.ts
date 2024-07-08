@@ -5,7 +5,7 @@ import {
   EVO_API_USERNAME,
   USE_MOCK,
 } from "@/helpers/env";
-import { Membership, BranchePlan, BranchePlanPromotional } from "@/helpers/types";
+import { Membership, BranchPlan, BranchPlanPromotional } from "@/helpers/types";
 
 export default class EvoApiClient {
   private static instance: EvoApiClient;
@@ -19,7 +19,7 @@ export default class EvoApiClient {
 
   public getPlansByBranchId = async (
     branchId: number
-  ): Promise<Array<BranchePlan>> => {
+  ): Promise<Array<BranchPlan>> => {
     if (USE_MOCK) return [];
 
     const url = `${EVO_API_BASE_URL}/v1/membership?idBranch=${branchId}&active=true`;
@@ -42,7 +42,7 @@ export default class EvoApiClient {
           (membership) =>
             membership.nameMembership.startsWith("SITE:") && membership.urlSale
         )
-        .map<BranchePlan>(
+        .map<BranchPlan>(
           ({
             displayName: name,
             value,
@@ -53,7 +53,7 @@ export default class EvoApiClient {
             daysPromotionalPeriod,
             additionalService,
           }) => {
-            let promotional: BranchePlanPromotional | undefined;
+            let promotional: BranchPlanPromotional | undefined;
 
             if (valuePromotionalPeriod) {
               if (monthsPromotionalPeriod || daysPromotionalPeriod) {
@@ -73,7 +73,7 @@ export default class EvoApiClient {
               }
             }
 
-            const result: BranchePlan = {
+            const result: BranchPlan = {
               name: name!,
               value,
               benefits: differentials
