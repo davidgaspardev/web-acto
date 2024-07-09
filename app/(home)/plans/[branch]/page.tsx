@@ -32,7 +32,7 @@ export default async function Page(props: PageProps) {
   branch.plans = await getPlans(branch);
   if (!branch.plans.length) {
     return (
-      <div className="flex flex-col items-center justify-center font-Bree text-black h-[calc(100vh-416px)] md:px-8 px-4">
+      <div className="flex flex-col items-center justify-center font-Bree text-black min-h-[calc(100vh-416px)] md:px-8 py-4 px-4">
         <div>
           <h1 className="text-2xl text-[#3c2063] text-center">Estamos finalizando alguns ajustes da nova unidade, e logo mais vamos contar tuda a vocês.</h1>
           <p className="text-[#3c2063] text-center">Em breve divulgaremos mais informações, lembrando que para participar da condição especial de inauguração é necessário permanecer no grupo e se cadastrar para receber o voucher.</p>
