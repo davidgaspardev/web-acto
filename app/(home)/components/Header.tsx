@@ -14,13 +14,13 @@ export default function Header() {
               name: "Planos",
               link: "/plans"
             },
-            // {
-            //   name:  "Clube",
-            //   link: "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/club%2Facto_club.pdf?alt=media&token=0fef94d5-694f-4b51-8893-1f804435839c"
-            // }
+            {
+              name:  "Trabalhe Conosco",
+              link: "https://actoacademia.vagas.solides.com.br/"
+            }
           ].map(({ name, link }, index) => (
             <Link key={index} href={link} className="h-full w-24 flex flex-col items-center justify-center">
-              <h2 className="font-Bree font-bold text-xl text-[#553581]">{name}</h2>
+              <h2 className="font-Bree font-bold text-xl text-[#553581] leading-4 text-center">{name}</h2>
             </Link>
           ))
         }
