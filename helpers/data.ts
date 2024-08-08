@@ -138,7 +138,7 @@ export const cardModelOneData: ModelOne[] = [
       "Estamos com vagas em aberto e queremos contar com profissionais dedicados e apaixonados pelo universo da saúde e bem-estar! Ao fazer parte da nossa equipe você terá a oportunidade de crescer profissionalmente em um ambiente dinâmico e acolhedor.",
     button: {
       name: "Saiba mais",
-      link: "https://actoacademia.typeform.com/grupoacto-vagas",
+      link: "https://actoacademia.vagas.solides.com.br/",
     },
   },
 ];
