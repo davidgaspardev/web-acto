@@ -68,6 +68,20 @@ export default function BranchLayout(props: BranchesLayoutProps) {
             `,
           }}
         />
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-950806467" />
+        <Script
+          id="google-tag"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'AW-950806467');
+            `,
+          }}/>
+      </head>
+      <body>
         <noscript>
           <Image
             height="1"
@@ -77,8 +91,6 @@ export default function BranchLayout(props: BranchesLayoutProps) {
             alt="Facebook Pixel"
           />
         </noscript>
-      </head>
-      <body>
         <main className="pt-16 bg-white">
           <Header />
           <Banner />
