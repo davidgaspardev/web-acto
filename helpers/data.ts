@@ -125,7 +125,7 @@ export const cardModelOneData: ModelOne[] = [
       "Acumule pontos ao longo de sua jornada de bem-estar e troque por descontos e prêmios incriveis! Cada ação que você realiza na Acto é uma oportunidade de acumular pontos para trocar por prêmios e descontos de nossos parceiros selecionados.",
     button: {
       name: "Saiba mais",
-      link: "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/club%2Facto_club.pdf?alt=media&token=0fef94d5-694f-4b51-8893-1f804435839c",
+      link: "https://evo-totem.w12app.com.br/actoacademia/0/page/landing-page?preview=true",
     },
   },
   {
