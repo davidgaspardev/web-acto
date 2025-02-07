@@ -84,7 +84,7 @@ export const branches: BranchInfo[] = [
     zipCode: "50680-000",
     slug: "iputinga-prime",
     imageUrl:
-      "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/branches%2Fbranche_iputinga-prime.jpg?alt=media&token=e287b9e4-4bc5-4bd6-bbb7-69a951e78071",
+      "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/branches%2Fbranche_iputinga-prime.png?alt=media&token=e2394f4a-14cf-4de8-a661-49ad375fedcb",
     wppLink: "https://wa.me/message/4TNN74AZUSRTJ1",
   },
 ];
