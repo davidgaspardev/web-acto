@@ -8,9 +8,9 @@ export default function HomePage() {
   return (
     <div className="max-w-6xl m-auto">
       <Carousel className="p-4" thumbnails={[
-        "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/images%2Fcarousel-1.png?alt=media&token=42e78ca0-270a-4af7-9c2f-3c63c90a6599",
-        "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/images%2Fcarousel-2.png?alt=media&token=467070ac-4672-4c00-b47f-7d547589ebb5",
-        "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/images%2Fcarousel-3.png?alt=media&token=c5d552de-6a33-4753-8f23-62717fa635cf"
+        "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/images%2Fcarousel-1_v2.jpg?alt=media&token=4d432a51-e1e3-400a-8f89-50a618e21baf",
+        "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/images%2Fcarousel-2_v2.jpg?alt=media&token=f8ad3108-04b6-44c4-8a64-27f9f49d21b0",
+        "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/images%2Fcarousel-3_v2.jpg?alt=media&token=3b606ce8-77cc-45b7-8545-9b18ee03dba5"
       ]} />
 
       <CardOne data={cardModelOneData[0]} />
