@@ -71,7 +71,7 @@ export const branches: BranchInfo[] = [
     zipCode: "50670-590",
     slug: "engenho",
     imageUrl:
-      "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/branches%2Fbranche_engenho.jpg?alt=media&token=a1167580-8e95-4130-85de-22380cd53cfb",
+      "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/branches%2Fbranche_engenho_v2.jpg?alt=media&token=3e52f0b3-d6d7-48f1-bc4f-a2353c46500a",
     wppLink: "https://wa.me/message/K2KTKXGW5GIZK1",
   },
   {
@@ -93,7 +93,7 @@ export const cardModelOneData: ModelOne[] = [
   {
     id: "1",
     imageUrl:
-      "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/images%2Fimg-acto.png?alt=media&token=1ed2ede1-5ac5-4460-8099-4dd2159c60ed",
+      "https://firebasestorage.googleapis.com/v0/b/acto-dev.appspot.com/o/branches%2Fbranche_engenho_v2.jpg?alt=media&token=3e52f0b3-d6d7-48f1-bc4f-a2353c46500a",
     imageAlt: "Placeholder",
     title: "Conheça nossas unidades",
     content: "Encontre a unidade ideal para você mudar a sua vida.",
