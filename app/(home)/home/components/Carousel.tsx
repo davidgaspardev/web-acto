@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image";
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 interface CarouselProps {
   className?: string;
@@ -14,66 +14,69 @@ export default function Carousel(props: CarouselProps) {
   const [position, setPosition] = useState(0);
   const corouselRef = useRef<HTMLDivElement>(null);
   const corouselAnimationLock = useRef(false);
+  const [isAutoPlay, setIsAutoPlay] = useState(true);
 
   const next = useCallback((positionTarget?: number) => {
     // if (position === thumbnails.length - 1) return;
     if (corouselAnimationLock.current) return;
     corouselAnimationLock.current = true;
 
-    const hasPositionTarget = positionTarget !== undefined;
+    if(typeof positionTarget === "undefined") {
+      positionTarget = (position == thumbnails.length - 1) ? 0 : position + 1;
+    }
 
     const corouselElement = corouselRef.current;
 
     if (corouselElement) {
       const width = getComputedStyle(corouselElement).width.replace('px', '');
 
-      let offset = 1;
-
-      if (hasPositionTarget) {
-        offset = positionTarget - position;
-      }
+      const offset = positionTarget - position;
 
       console.log({ offset, position, positionTarget, width });
 
       corouselElement.scrollBy({ left: Number(width) * offset, behavior: 'smooth' });
-      setPosition(hasPositionTarget ? positionTarget : position + 1);
+      setPosition(positionTarget);
     }
 
     setTimeout(() => corouselAnimationLock.current = false, 500);
-  }, [position /*, thumbnails*/]);
+  }, [position, thumbnails]);
 
   const prev = useCallback((positionTarget?: number) => {
     // if (position === 0) return;
     if (corouselAnimationLock.current) return;
     corouselAnimationLock.current = true;
 
-    const hasPositionTarget = positionTarget !== undefined;
+    if(typeof positionTarget === "undefined") {
+      positionTarget = (position == 0) ? thumbnails.length - 1 : position - 1;
+    }
 
     const corouselElement = corouselRef.current;
 
     if (corouselElement) {
       const width = getComputedStyle(corouselElement).width.replace('px', '');
 
-      let offset = -1;
-
-      if (hasPositionTarget) {
-        offset = (position - positionTarget) * offset;
-      }
+      const offset = -(position - positionTarget);
 
       console.log({ offset, position, positionTarget, width });
 
       corouselElement.scrollBy({ left: Number(width) * offset, behavior: 'smooth' });
-      setPosition(hasPositionTarget ? positionTarget : position - 1);
+      setPosition(positionTarget);
     }
 
     setTimeout(() => corouselAnimationLock.current = false, 500);
-  }, [position]);
+  }, [position, thumbnails]);
+
+  useEffect(() => {
+    if (isAutoPlay) {
+      const timeout = setTimeout(next, 6000);
+
+      return () => clearTimeout(timeout);
+    }
+  }, [next, isAutoPlay]);
 
   return (
     <div className={className}>
       <div className={"w-full aspect-[27/16] relative"}>
-        {/* <SideButton direction="left" onClick={prev} />
-        <SideButton direction="right" onClick={next} /> */}
         <BottomIndicator index={position} amount={thumbnails.length} onClick={(i) => {
           if (i > position) {
             next(i);
@@ -83,7 +86,7 @@ export default function Carousel(props: CarouselProps) {
         }} />
         <div
           ref={corouselRef}
-          className="w-full h-full whitespace-nowrap overflow-hidden flex flex-row rounded-b-[6%_13%] rounded-tl-[6%_13%]"
+          className="w-full h-full whitespace-nowrap overflow-hidden flex flex-row rounded-b-[4%_8%] rounded-tl-[4%_8%]"
         >
           {thumbnails.map((thumbnail, index) => <Image
             unoptimized
@@ -94,6 +97,10 @@ export default function Carousel(props: CarouselProps) {
             src={thumbnail}
             alt="carousel image"
           />)}
+
+          <button className="absolute left-4 md:left-8 top-4 w-14 h-5 rounded-full opacity-50 bg-[#fef7ffb3] flex justify-center items-center text-[#553581] text-xs" onClick={() => setIsAutoPlay(!isAutoPlay)}>
+            {isAutoPlay ? "Pause" : "Play"}
+          </button>
         </div>
       </div>
     </div>
