@@ -5,6 +5,7 @@ import { useCallback, useEffect, useRef, useState, ReactNode } from "react";
 interface BannerCarouselProps {
   className?: string;
   banners: ReactNode[];
+  initialPosition?: number;
   isAutoPlay?: boolean;
   hiddenAutoPlayButton?: boolean;
 }
@@ -16,9 +17,9 @@ interface BannerCarouselProps {
  * @returns {JSX.Element}
  */
 export default function BannerCarousel(props: BannerCarouselProps): JSX.Element {
-  const { banners, className, isAutoPlay: isAutoPlayInitial, hiddenAutoPlayButton } = props;
+  const { banners, className, isAutoPlay: isAutoPlayInitial, initialPosition, hiddenAutoPlayButton } = props;
 
-  const [position, setPosition] = useState(0);
+  const [position, setPosition] = useState(initialPosition || 0);
   const [isAutoPlay, setIsAutoPlay] = useState(isAutoPlayInitial);
   const corouselElementRef = useRef<HTMLDivElement>(null);
   const corouselAnimationLock = useRef(false);
